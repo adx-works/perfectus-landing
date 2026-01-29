@@ -127,10 +127,12 @@ export const Screen = (): JSX.Element => {
         <ServicesSection />
       </section>
 
-      <section className="relative w-full px-10 py-20">
-        <div className="flex gap-[27px] items-start">
-          <Card className="w-[317px] h-[415px] rounded-[30px] bg-[linear-gradient(39deg,rgba(86,142,255,1)_0%,rgba(158,186,195,1)_100%)] border-0">
-            <CardContent className="p-0 h-full flex flex-col justify-between py-[35px] px-[75px]">
+      <section className="relative w-full py-20 flex flex-col items-center gap-12">
+        <SpecialistsSection />
+        
+        <div className="flex gap-[27px] items-start justify-center flex-wrap px-10">
+          <Card className="w-[317px] h-[415px] rounded-[30px] bg-[linear-gradient(39deg,rgba(86,142,255,1)_0%,rgba(158,186,195,1)_100%)] border-0 relative overflow-hidden">
+            <CardContent className="p-0 h-full flex flex-col justify-between py-[35px] px-[35px] relative z-10">
               <p className="font-semibold text-[22px] tracking-[-0.20px] leading-[26.4px] [font-family:'Manrope',Helvetica] text-[#ffffff]">
                 28 лет опыта
                 <br />
@@ -145,24 +147,22 @@ export const Screen = (): JSX.Element => {
           {specialists.map((specialist, index) => (
             <Card
               key={index}
-              className="flex flex-col w-[321px] h-[415px] items-center gap-[11px] border-0 bg-transparent"
+              className="flex flex-col w-[318px] h-[415px] items-center gap-[11px] border-0 bg-transparent"
             >
-              <CardContent className="p-0 flex-1 grow relative self-stretch w-full bg-backgroundlight-gray rounded-[30px] overflow-hidden">
+              <CardContent className="p-0 flex-1 grow relative self-stretch w-full bg-[#f8f9fc] rounded-[30px] overflow-hidden">
                 <img
-                  className="absolute top-[calc(50.00%_-_178px)] left-[calc(50.00%_-_160px)] w-[321px] h-[356px] object-cover"
-                  alt="Image"
+                  className="absolute inset-0 w-full h-full object-cover"
+                  alt={specialist.name}
                   src={specialist.image}
                 />
-                {specialist.hasGradient && (
-                  <div className="w-[321px] bg-[linear-gradient(180deg,rgba(0,0,0,0)_65%,rgba(0,0,0,0.75)_100%)] absolute top-[calc(50.00%_-_178px)] left-[calc(50.00%_-_160px)] h-[356px]" />
-                )}
-                <div className="flex flex-col w-[271px] items-center gap-2.5 absolute left-[calc(50.00%_-_136px)] bottom-5">
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent from-[65%] to-[rgba(0,0,0,0.75)]" />
+                <div className="flex flex-col w-full items-center gap-2.5 absolute bottom-5 px-4">
                   <h3 className="font-semibold text-[#ffffff] text-2xl tracking-[-0.20px] leading-[28.8px] relative self-stretch [font-family:'Manrope',Helvetica] text-center">
                     {specialist.name}
                   </h3>
                 </div>
               </CardContent>
-              <p className="font-medium text-[#000000d9] text-[17px] tracking-[-0.17px] leading-[23.8px] relative self-stretch [font-family:'Manrope',Helvetica] text-center whitespace-pre-line">
+              <p className="font-medium text-[rgba(0,0,0,0.85)] text-[17px] tracking-[-0.17px] leading-[23.8px] relative self-stretch [font-family:'Manrope',Helvetica] text-center whitespace-pre-line">
                 {specialist.role}
               </p>
             </Card>
@@ -170,7 +170,38 @@ export const Screen = (): JSX.Element => {
         </div>
       </section>
 
-      <SpecialistsSection />
+      <section className="relative w-full px-10 py-20 bg-[#f8f9fc] rounded-[40px] my-20">
+        <div className="flex flex-col md:flex-row gap-20 items-center justify-between">
+          <div className="flex flex-col gap-8 max-w-[620px]">
+            <h2 className="text-[40px] font-semibold leading-[1.1] tracking-[-0.25px] uppercase bg-gradient-to-r from-[#568eff] to-[#6aa1c2] bg-clip-text text-transparent">
+              не уверены в выборе услуги?
+            </h2>
+            <p className="text-[44px] font-normal leading-[1.2] text-black uppercase">
+              Свяжитесь с нами<br />и уточните<br />у специалиста
+            </p>
+            <div className="flex flex-col gap-5 text-[22px] leading-[1.68]">
+              <div>
+                <p className="font-medium text-black">Номер телефона:</p>
+                <p className="font-semibold text-[#587675]">+7 (921) 873-70-73</p>
+              </div>
+              <div>
+                <p className="font-medium text-black">Электронная почта:</p>
+                <p className="font-semibold text-[#587675]">perf-dent@yandex.ru</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="relative w-[225px] h-[229px] shrink-0">
+            <div className="absolute inset-0 rounded-[30px] bg-gradient-to-br from-[#568eff] to-[#9ebac3]" />
+            <img src="https://www.figma.com/api/mcp/asset/7eaa935b-f60f-4b44-a460-32318099c01c" alt="Tooth" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-auto" />
+          </div>
+
+          <div className="w-[490px] h-[488px] rounded-[40px] overflow-hidden relative shrink-0">
+            <img src="/figmaAssets/img-7846-1.png" alt="Contact" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-[rgba(126,167,222,0.5)] to-transparent" />
+          </div>
+        </div>
+      </section>
 
       <section className="relative w-full px-10 py-20">
         <div className="grid grid-cols-[433px_216px_370px_293px] gap-4 auto-rows-min">
