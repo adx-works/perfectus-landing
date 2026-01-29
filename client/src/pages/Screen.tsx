@@ -123,11 +123,11 @@ export const Screen = (): JSX.Element => {
 
       <HeroCallToActionSection />
 
-      <section className="relative w-full bg-[#f8f9fc] py-20">
+      <section id="services" className="relative w-full bg-[#f8f9fc] py-20">
         <ServicesSection />
       </section>
 
-      <section className="relative w-full py-20 flex flex-col items-center gap-12">
+      <section id="specialists" className="relative w-full py-20 flex flex-col items-center gap-12">
         <SpecialistsSection />
         
         <div className="flex gap-[27px] items-start justify-center flex-wrap px-10">

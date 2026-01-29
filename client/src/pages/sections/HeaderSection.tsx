@@ -1,4 +1,5 @@
 import { MapPinIcon } from "lucide-react";
+import { Link } from "wouter";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -7,39 +8,40 @@ import {
 } from "@/components/ui/navigation-menu";
 
 const navigationItems = [
-  { label: "Наша клиника", active: true },
-  { label: "Услуги", active: false },
-  { label: "Специалисты", active: false },
-  { label: "Документы", active: false },
+  { label: "Наша клиника", href: "/" },
+  { label: "Услуги", href: "#services" },
+  { label: "Специалисты", href: "#specialists" },
+  { label: "Документы", href: "#documents" },
 ];
 
 export const HeaderSection = (): JSX.Element => {
   return (
     <header className="flex w-full max-w-[1360px] items-center justify-between px-4 py-0 relative mx-auto bg-transparent">
       <div className="inline-flex items-center gap-10 relative flex-[0_0_auto]">
-        <div className="inline-flex h-[43px] items-center gap-3 relative flex-[0_0_auto]">
-          <img
-            className="relative w-[43.2px] h-[43.2px]"
-            alt="Frame"
-            src="/figmaAssets/frame-12343899.svg"
-          />
-          <div className="relative w-fit [font-family:'Manrope',Helvetica] font-semibold text-black text-xl tracking-[-0.21px] leading-[normal]">
-            ПЕРФЕКТУС
+        <Link href="/">
+          <div className="inline-flex h-[43px] items-center gap-3 relative flex-[0_0_auto] cursor-pointer">
+            <img
+              className="relative w-[43.2px] h-[43.2px]"
+              alt="Frame"
+              src="/figmaAssets/frame-12343899.svg"
+            />
+            <div className="relative w-fit [font-family:'Manrope',Helvetica] font-semibold text-black text-xl tracking-[-0.21px] leading-[normal]">
+              ПЕРФЕКТУС
+            </div>
           </div>
-        </div>
+        </Link>
 
         <NavigationMenu>
           <NavigationMenuList className="flex items-center gap-4">
             {navigationItems.map((item, index) => (
               <NavigationMenuItem key={index}>
-                <NavigationMenuLink
-                  className={`relative w-fit [font-family:'Manrope',Helvetica] ${
-                    item.active
-                      ? "font-bold text-dark-green-grey"
-                      : "font-medium text-black"
-                  } text-base tracking-[-0.10px] leading-6 whitespace-nowrap cursor-pointer hover:text-dark-green-grey transition-colors`}
-                >
-                  {item.label}
+                <NavigationMenuLink asChild>
+                  <a
+                    href={item.href}
+                    className="relative w-fit [font-family:'Manrope',Helvetica] font-medium text-black text-base tracking-[-0.10px] leading-6 whitespace-nowrap cursor-pointer hover:text-[#587675] transition-colors"
+                  >
+                    {item.label}
+                  </a>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             ))}
