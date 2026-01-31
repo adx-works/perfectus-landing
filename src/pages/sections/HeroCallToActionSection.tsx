@@ -1,6 +1,6 @@
 export const HeroCallToActionSection = (): JSX.Element => {
   return (
-    <section className="flex flex-col w-full max-w-[696px] mx-auto items-center gap-2 px-4">
+    <section className="flex flex-col w-full max-w-[786px] mx-auto items-center gap-2 px-4">
       <h1 className="w-fit [font-family:'Manrope',Helvetica] font-semibold text-textdark text-[44px] text-center tracking-[-0.25px] leading-[66px] whitespace-nowrap">
         Стоматологические услуги
       </h1>

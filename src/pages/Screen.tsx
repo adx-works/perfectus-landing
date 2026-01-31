@@ -74,12 +74,14 @@ const clinicPhotos = [
 
 export const Screen = (): JSX.Element => {
   return (
-    <div className="bg-[#ffffff] w-full min-w-[1440px] relative">
-      <HeaderSection />
+    <div className="bg-[#ffffff] w-full relative">
+      <div className="w-full max-w-[1440px] mx-auto mb-8">
+        <HeaderSection />
+      </div>
 
       <section className="relative w-full">
-        <div className="relative w-full px-10">
-          <div className="relative w-full h-[640px]">
+        <div className="relative w-full max-w-[1440px] mx-auto px-10">
+          <div className="relative w-full h-[640px] rounded-[40px] overflow-hidden">
             <img
               className="absolute inset-0 w-full h-full object-cover"
               alt="Rectangle"
@@ -91,21 +93,57 @@ export const Screen = (): JSX.Element => {
               src="/figmaAssets/mask-group.png"
             />
             <img
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-[80%] h-[80%] object-cover top-[20.5%] left-[10%]"
               alt="Mask group"
               src="/figmaAssets/mask-group-1.png"
             />
 
-            <div className="absolute top-[258px] left-1/2 -translate-x-1/2 w-[990px] flex flex-col items-center gap-[41px]">
-              <h2 className="[font-family:'Manrope',Helvetica] font-semibold text-[#ffffff] text-[40px] text-center tracking-[-0.25px] leading-[44px]">
+            {/* Статистика в верхней части */}
+            <div className="absolute top-8 left-8 right-8 flex gap-6">
+              <div className="flex-1 bg-[#ffffff1a] rounded-[30px] backdrop-blur-[5px] p-8 min-h-[120px] flex flex-col justify-center">
+                <div className="[font-family:'Manrope',Helvetica] font-bold text-[#ffffff] text-[48px] leading-[1.1] mb-2">
+                  65 600
+                </div>
+                <div className="[font-family:'Nunito',Helvetica] font-normal text-[#ffffff] text-[18px] leading-[1.3]">
+                  поставили<br />пломб
+                </div>
+              </div>
+              <div className="flex-1 bg-[#ffffff1a] rounded-[30px] backdrop-blur-[5px] p-8 min-h-[120px] flex flex-col justify-center">
+                <div className="[font-family:'Manrope',Helvetica] font-bold text-[#ffffff] text-[48px] leading-[1.1] mb-2">
+                  8 640
+                </div>
+                <div className="[font-family:'Nunito',Helvetica] font-normal text-[#ffffff] text-[18px] leading-[1.3]">
+                  поставили<br />коронок
+                </div>
+              </div>
+              <div className="flex-1 bg-[#ffffff1a] rounded-[30px] backdrop-blur-[5px] p-8 min-h-[120px] flex flex-col justify-center text-right">
+                <div className="[font-family:'Manrope',Helvetica] font-bold text-[#ffffff] text-[48px] leading-[1.1] mb-2">
+                  3550
+                </div>
+                <div className="[font-family:'Nunito',Helvetica] font-normal text-[#ffffff] text-[18px] leading-[1.3]">
+                  установили съемных<br />протезов
+                </div>
+              </div>
+              <div className="flex-1 bg-[#ffffff1a] rounded-[30px] backdrop-blur-[5px] p-8 min-h-[120px] flex flex-col justify-center text-right">
+                <div className="[font-family:'Manrope',Helvetica] font-bold text-[#ffffff] text-[48px] leading-[1.1] mb-2">
+                  3400
+                </div>
+                <div className="[font-family:'Nunito',Helvetica] font-normal text-[#ffffff] text-[18px] leading-[1.3]">
+                  зубов спасли<br />от удаления
+                </div>
+              </div>
+            </div>
+
+            <div className="absolute top-[200px] left-1/2 -translate-x-1/2 w-[990px] flex flex-col items-center gap-[20px]">
+              <h2 className="[font-family:'Manrope',Helvetica] font-semibold text-[#ffffff] text-[24px] text-center tracking-[-0.25px] leading-[1.2] mt-10">
                 СТОМАТОЛОГИЧЕСКАЯ КЛИНИКА
               </h2>
-              <h1 className="[font-family:'Manrope',Helvetica] font-bold text-[#ffffff] text-[110px] text-center tracking-[-0.25px] leading-[121.0px]">
+              <h1 className="[font-family:'Manrope',Helvetica] font-bold text-[#ffffff] text-[80px] text-center tracking-[-0.25px] leading-[1.1]">
                 «ПЕРФЕКТУС»
               </h1>
             </div>
 
-            <Button className="absolute top-[454px] left-1/2 -translate-x-1/2 flex flex-col w-[330px] items-center justify-center px-10 py-5 bg-[#568eff] rounded-[40px] h-auto hover:bg-[#4a7de6]">
+            <Button className="absolute bottom-[120px] left-1/2 -translate-x-1/2 flex flex-col w-[330px] items-center justify-center px-10 py-5 bg-[#568eff] rounded-[40px] h-auto hover:bg-[#4a7de6]">
               <span className="[font-family:'Manrope',Helvetica] font-semibold text-white text-xl text-center tracking-[0] leading-[normal]">
                 Записаться на прием
               </span>
@@ -114,7 +152,7 @@ export const Screen = (): JSX.Element => {
               </span>
             </Button>
 
-            <p className="absolute top-[436px] right-10 w-[363px] [font-family:'Manrope',Helvetica] font-semibold text-[#ffffff] text-xl tracking-[-0.17px] leading-7">
+            <p className="absolute bottom-[140px] right-10 w-[363px] [font-family:'Manrope',Helvetica] font-semibold text-[#ffffff] text-l tracking-[-0.17px] leading-7">
               Опытные врачи, индивидуальный подход, современное оборудование,
               безопасное лечение, дружелюбная атмосфера — вот что вас ждет в
               стоматологии «Перфектус»
@@ -123,18 +161,22 @@ export const Screen = (): JSX.Element => {
         </div>
       </section>
 
-      <HeroSection />
+      <div className="w-full max-w-[1440px] mx-auto mt-8 mb-8">
+        <HeroCallToActionSection />
+      </div>
 
-      <HeroCallToActionSection />
-
-      <section id="services" className="relative w-full bg-[#f8f9fc] py-20">
-        <ServicesSection />
-      </section>
+      <div className="w-full bg-[#f8f9fc] py-20">
+        <div className="w-full max-w-[1440px] mx-auto">
+          <ServicesSection />
+        </div>
+      </div>
 
       <section id="specialists" className="relative w-full py-20 flex flex-col items-center gap-12">
-        <SpecialistsSection />
+        <div className="w-full max-w-[1440px] mx-auto">
+          <SpecialistsSection />
+        </div>
         
-        <div className="flex gap-[27px] items-start justify-center flex-wrap px-10">
+        <div className="flex gap-[27px] items-start justify-center flex-wrap px-10 w-full max-w-[1440px] mx-auto">
           <Card className="w-[317px] h-[415px] rounded-[30px] bg-[linear-gradient(39deg,rgba(86,142,255,1)_0%,rgba(158,186,195,1)_100%)] border-0 relative overflow-hidden">
             <CardContent className="p-0 h-full flex flex-col justify-between py-[35px] px-[35px] relative z-10">
               <p className="font-semibold text-[22px] tracking-[-0.20px] leading-[26.4px] [font-family:'Manrope',Helvetica] text-[#ffffff]">
@@ -175,7 +217,8 @@ export const Screen = (): JSX.Element => {
         </div>
       </section>
 
-      <section className="relative w-full px-10 py-20 bg-[#f8f9fc] rounded-[40px] my-20">
+      <div className="w-full max-w-[1440px] mx-auto px-10 my-20">
+        <section className="relative w-full px-10 py-20 bg-[#f8f9fc] rounded-[40px]">
         <div className="flex flex-col md:flex-row gap-20 items-center justify-between">
           <div className="flex flex-col gap-8 max-w-[620px]">
             <h2 className="text-[40px] font-semibold leading-[1.1] tracking-[-0.25px] uppercase bg-gradient-to-r from-[#568eff] to-[#6aa1c2] bg-clip-text text-transparent">
@@ -206,9 +249,11 @@ export const Screen = (): JSX.Element => {
             <div className="absolute inset-0 bg-gradient-to-tr from-[rgba(126,167,222,0.5)] to-transparent" />
           </div>
         </div>
-      </section>
+        </section>
+      </div>
 
-      <section className="relative w-full px-10 py-20">
+      <div className="w-full max-w-[1440px] mx-auto px-10 py-20">
+        <section className="relative w-full">
         <div className="grid grid-cols-[433px_216px_370px_293px] gap-4 auto-rows-min">
           <img
             className="rounded-2xl object-cover"
@@ -265,11 +310,16 @@ export const Screen = (): JSX.Element => {
             src="/figmaAssets/img-7785-1-2.png"
           />
         </div>
-      </section>
+        </section>
+      </div>
 
-      <ClinicPhotosSection />
+      <div className="w-full max-w-[1440px] mx-auto">
+        <ClinicPhotosSection />
+      </div>
 
-      <FooterSection />
+      <div className="w-full max-w-[1440px] mx-auto">
+        <FooterSection />
+      </div>
     </div>
   );
 };

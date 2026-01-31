@@ -23,7 +23,7 @@ const workingHours = [
 
 export const FooterSection = (): JSX.Element => {
   return (
-    <footer className="flex w-full max-w-[1360px] items-center gap-10 px-6 lg:px-10 py-8 relative bg-transparent">
+    <footer className="flex w-full items-center gap-10 px-6 lg:px-10 py-8 relative bg-transparent">
       <div className="relative w-full lg:w-[641px] h-[400px] lg:h-auto lg:self-stretch rounded-[30px] bg-[url(/figmaAssets/image-930.png)] bg-cover bg-center" />
 
       <div className="flex flex-col items-start gap-8 px-4 py-0 relative flex-1">

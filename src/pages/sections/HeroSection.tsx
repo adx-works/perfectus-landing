@@ -29,7 +29,7 @@ const statsData = [
 
 export const HeroSection = (): JSX.Element => {
   return (
-    <section className="flex w-full max-w-[1360px] items-center gap-4 px-[60px] py-0 relative mx-auto">
+    <section className="flex w-full max-w-[1440px] items-center gap-4 px-[60px] py-0 relative mx-auto">
       {statsData.map((stat, index) => (
         <Card
           key={index}

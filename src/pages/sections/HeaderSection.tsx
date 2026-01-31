@@ -16,7 +16,7 @@ const navigationItems = [
 
 export const HeaderSection = (): JSX.Element => {
   return (
-    <header className="flex w-full max-w-[1360px] items-center justify-between px-4 py-0 relative mx-auto bg-transparent">
+    <header className="flex w-full max-w-[1440px] items-center justify-between px-4 py-6 relative mx-auto bg-transparent">
       <div className="inline-flex items-center gap-10 relative flex-[0_0_auto]">
         <Link href="/">
           <div className="inline-flex h-[43px] items-center gap-3 relative flex-[0_0_auto] cursor-pointer">

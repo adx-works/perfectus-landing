@@ -2,7 +2,7 @@ import { MapPinIcon } from "lucide-react";
 
 export const ClinicPhotosSection = (): JSX.Element => {
   return (
-    <section className="flex flex-col w-full max-w-[696px] items-center gap-1 relative mx-auto">
+    <section className="flex flex-col w-full items-center gap-1 relative">
       <h2 className="w-fit [font-family:'Manrope',Helvetica] font-semibold text-textdark text-[44px] text-center tracking-[-0.25px] leading-[66px] whitespace-nowrap">
         Фото клиники
       </h2>

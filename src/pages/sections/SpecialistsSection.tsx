@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export const SpecialistsSection = (): JSX.Element => {
   return (
-    <section className="flex flex-col w-full max-w-[786px] items-center gap-2 px-4 py-0 relative mx-auto text-center">
+    <section className="flex flex-col w-full items-center gap-2 px-4 py-0 relative text-center">
       <h2 className="[font-family:'Manrope',Helvetica] font-semibold text-black text-[44px] tracking-[-0.25px] leading-[66px] whitespace-nowrap">
         Наши специалисты
       </h2>
