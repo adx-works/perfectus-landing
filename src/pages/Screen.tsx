@@ -159,13 +159,15 @@ export const Screen = (): JSX.Element => {
               </h1>
             </div>
 
-            <Button className="absolute bottom-[120px] left-1/2 -translate-x-1/2 flex flex-col w-[330px] items-center justify-center px-10 py-5 bg-[#568eff] rounded-[40px] h-auto hover:bg-[#4a7de6]">
-              <span className="[font-family:'Manrope',Helvetica] font-semibold text-white text-xl text-center tracking-[0] leading-[normal]">
-                Записаться на прием
-              </span>
-              <span className="font-medium text-[#ffffffb2] text-sm tracking-[-0.10px] leading-[21px] whitespace-nowrap [font-family:'Manrope',Helvetica]">
-                +7 (921) 873-70-73
-              </span>
+            <Button asChild className="absolute bottom-[120px] left-1/2 -translate-x-1/2 flex flex-col w-[330px] items-center justify-center px-10 py-5 bg-[#568eff] rounded-[40px] h-auto hover:bg-[#4a7de6]">
+              <a href="tel:+79218737073">
+                <span className="[font-family:'Manrope',Helvetica] font-semibold text-white text-xl text-center tracking-[0] leading-[normal]">
+                  Записаться на прием
+                </span>
+                <span className="font-medium text-[#ffffffb2] text-sm tracking-[-0.10px] leading-[21px] whitespace-nowrap [font-family:'Manrope',Helvetica]">
+                  +7 (921) 873-70-73
+                </span>
+              </a>
             </Button>
 
             <p className="absolute bottom-[140px] right-10 w-[363px] [font-family:'Manrope',Helvetica] font-semibold text-[#ffffff] text-l tracking-[-0.17px] leading-7">
