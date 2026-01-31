@@ -24,8 +24,30 @@ const workingHours = [
 export const FooterSection = (): JSX.Element => {
   return (
     <footer className="flex w-full items-center gap-10 px-6 lg:px-10 py-8 relative bg-transparent">
-      <div className="relative w-full lg:w-[641px] h-[400px] lg:h-auto lg:self-stretch rounded-[30px] bg-[url(/figmaAssets/image-930.png)] bg-cover bg-center" />
-
+      <div className="relative w-full lg:w-[641px] h-[400px] lg:h-auto lg:self-stretch rounded-[30px] overflow-hidden">
+        <div className="relative overflow-hidden w-full h-full">
+          <a 
+            href="https://yandex.ru/maps/org/perfektus/169644780197/?utm_medium=mapframe&utm_source=maps" 
+            className="absolute top-0 left-0 text-[#eee] text-xs z-10"
+          >
+            Перфектус
+          </a>
+          <a 
+            href="https://yandex.ru/maps/10883/priozersk/category/dental_clinic/184106132/?utm_medium=mapframe&utm_source=maps" 
+            className="absolute top-[14px] left-0 text-[#eee] text-xs z-10"
+          >
+            Стоматологическая клиника в Приозерске
+          </a>
+          <iframe 
+            src="https://yandex.ru/map-widget/v1/?ll=30.119103%2C61.035472&mode=search&oid=169644780197&ol=biz&z=17.01" 
+            width="100%" 
+            height="100%" 
+            frameBorder="0" 
+            allowFullScreen={true} 
+            className="relative"
+          />
+        </div>
+      </div>
       <div className="flex flex-col items-start gap-8 px-4 py-0 relative flex-1">
         <div className="flex flex-col items-start gap-6 relative w-full">
           <div className="flex items-center gap-8 relative w-full">

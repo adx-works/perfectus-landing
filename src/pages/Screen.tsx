@@ -8,6 +8,7 @@ import { HeroCallToActionSection } from "./sections/HeroCallToActionSection";
 import { HeroSection } from "./sections/HeroSection";
 import { ServicesSection } from "./sections/ServicesSection";
 import { SpecialistsSection } from "./sections/SpecialistsSection";
+import { PhotoCarousel } from "@/components/PhotoCarousel";
 
 const specialists = [
   {
@@ -217,104 +218,12 @@ export const Screen = (): JSX.Element => {
         </div>
       </section>
 
-      <div className="w-full max-w-[1440px] mx-auto px-10 my-20">
-        <section className="relative w-full px-10 py-20 bg-[#f8f9fc] rounded-[40px]">
-        <div className="flex flex-col md:flex-row gap-20 items-center justify-between">
-          <div className="flex flex-col gap-8 max-w-[620px]">
-            <h2 className="text-[40px] font-semibold leading-[1.1] tracking-[-0.25px] uppercase bg-gradient-to-r from-[#568eff] to-[#6aa1c2] bg-clip-text text-transparent">
-              не уверены в выборе услуги?
-            </h2>
-            <p className="text-[44px] font-normal leading-[1.2] text-black uppercase">
-              Свяжитесь с нами<br />и уточните<br />у специалиста
-            </p>
-            <div className="flex flex-col gap-5 text-[22px] leading-[1.68]">
-              <div>
-                <p className="font-medium text-black">Номер телефона:</p>
-                <p className="font-semibold text-[#587675]">+7 (921) 873-70-73</p>
-              </div>
-              <div>
-                <p className="font-medium text-black">Электронная почта:</p>
-                <p className="font-semibold text-[#587675]">perf-dent@yandex.ru</p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="relative w-[225px] h-[229px] shrink-0">
-            <div className="absolute inset-0 rounded-[30px] bg-gradient-to-br from-[#568eff] to-[#9ebac3]" />
-            <img src="https://www.figma.com/api/mcp/asset/7eaa935b-f60f-4b44-a460-32318099c01c" alt="Tooth" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-auto" />
-          </div>
-
-          <div className="w-[490px] h-[488px] rounded-[40px] overflow-hidden relative shrink-0">
-            <img src="/figmaAssets/img-7846-1.png" alt="Contact" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-tr from-[rgba(126,167,222,0.5)] to-transparent" />
-          </div>
-        </div>
-        </section>
-      </div>
-
-      <div className="w-full max-w-[1440px] mx-auto px-10 py-20">
-        <section className="relative w-full">
-        <div className="grid grid-cols-[433px_216px_370px_293px] gap-4 auto-rows-min">
-          <img
-            className="rounded-2xl object-cover"
-            style={{ gridColumn: "1", gridRow: "1" }}
-            alt="Img"
-            src="/figmaAssets/img-7853-1.png"
-          />
-          <img
-            className="rounded-2xl object-cover"
-            style={{ gridColumn: "2", gridRow: "1" }}
-            alt="Img"
-            src="/figmaAssets/img-7807-1-2.png"
-          />
-          <img
-            className="rounded-2xl object-cover"
-            style={{ gridColumn: "2", gridRow: "2" }}
-            alt="Img"
-            src="/figmaAssets/img-7828-1.png"
-          />
-          <img
-            className="rounded-2xl object-cover"
-            style={{ gridColumn: "3", gridRow: "1 / 3" }}
-            alt="Img"
-            src="/figmaAssets/img-7822-1-2.png"
-          />
-          <img
-            className="rounded-2xl object-cover"
-            style={{ gridColumn: "4", gridRow: "1 / 3" }}
-            alt="Img"
-            src="/figmaAssets/img-7759-1.png"
-          />
-          <img
-            className="rounded-2xl object-cover"
-            style={{ gridColumn: "1", gridRow: "2 / 4" }}
-            alt="Img"
-            src="/figmaAssets/img-7846-1.png"
-          />
-          <img
-            className="rounded-2xl object-cover"
-            style={{ gridColumn: "2 / 4", gridRow: "3 / 5" }}
-            alt="Img"
-            src="/figmaAssets/img-7838-1--1-.png"
-          />
-          <img
-            className="rounded-2xl object-cover"
-            style={{ gridColumn: "4", gridRow: "3" }}
-            alt="Img"
-            src="/figmaAssets/img-7836-1.png"
-          />
-          <img
-            className="rounded-2xl object-cover"
-            style={{ gridColumn: "4", gridRow: "4" }}
-            alt="Img"
-            src="/figmaAssets/img-7785-1-2.png"
-          />
-        </div>
-        </section>
-      </div>
-
       <div className="w-full max-w-[1440px] mx-auto">
         <ClinicPhotosSection />
+      </div>
+
+      <div className="w-full max-w-[1440px] mx-auto px-10 py-10">
+        <PhotoCarousel />
       </div>
 
       <div className="w-full max-w-[1440px] mx-auto">
