@@ -22,5 +22,5 @@
     "vite.config.ts",
     "tailwind.config.ts"
   ],
-  "exclude": ["node_modules", "build", "dist", "app", "**/*.test.ts"]
+  "exclude": ["node_modules", "build", "dist", "**/*.test.ts"]
 }
