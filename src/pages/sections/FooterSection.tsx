@@ -71,16 +71,18 @@ export const FooterSection = (): JSX.Element => {
           </div>
 
           <div className="inline-flex items-center gap-6 relative flex-wrap">
-            <Button className="inline-flex h-[55px] items-center justify-center gap-2.5 px-[35px] py-3 relative rounded-full overflow-hidden bg-[linear-gradient(39deg,rgba(86,142,255,1)_0%,rgba(158,186,195,1)_100%)] hover:opacity-90">
-              <img
-                className="relative w-[18px] h-[18px]"
-                alt="Vector"
-                src="/figmaAssets/vector.svg"
-              />
+            <Button asChild className="inline-flex h-[55px] items-center justify-center gap-2.5 px-[35px] py-3 relative rounded-full overflow-hidden bg-[linear-gradient(39deg,rgba(86,142,255,1)_0%,rgba(158,186,195,1)_100%)] hover:opacity-90">
+              <a href="tel:+79218737073">
+                <img
+                  className="relative w-[18px] h-[18px]"
+                  alt="Vector"
+                  src="/figmaAssets/vector.svg"
+                />
 
-              <span className="w-fit font-[number:var(--desktop-subtitle-font-weight)] text-white text-[length:var(--desktop-subtitle-font-size)] tracking-[var(--desktop-subtitle-letter-spacing)] leading-[var(--desktop-subtitle-line-height)] whitespace-nowrap font-desktop-subtitle [font-style:var(--desktop-subtitle-font-style)]">
-                +7 (921) 873-70-73
-              </span>
+                <span className="w-fit font-[number:var(--desktop-subtitle-font-weight)] text-white text-[length:var(--desktop-subtitle-font-size)] tracking-[var(--desktop-subtitle-letter-spacing)] leading-[var(--desktop-subtitle-line-height)] whitespace-nowrap font-desktop-subtitle [font-style:var(--desktop-subtitle-font-style)]">
+                  +7 (921) 873-70-73
+                </span>
+              </a>
             </Button>
 
             <p className="relative max-w-[170px] [font-family:'Manrope',Helvetica] font-medium text-[#4e5155b2] text-base tracking-[-0.17px] leading-[22.4px]">
