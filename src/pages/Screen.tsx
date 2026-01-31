@@ -158,9 +158,6 @@ export const Screen = (): JSX.Element => {
               <h1 className="[font-family:'Manrope',Helvetica] font-bold text-[#ffffff] text-[80px] text-center tracking-[-0.25px] leading-[1.1]">
                 СТОМАТОЛОГИЧЕСКАЯ КЛИНИКА «ПЕРФЕКТУС»
               </h1>
-              <p className="[font-family:'Manrope',Helvetica] font-semibold text-[#ffffff] text-[24px] text-center tracking-[-0.25px] leading-[1.2] mt-4">
-                Современная стоматология в Приозерске
-              </p>
             </div>
 
             <Button asChild className="absolute bottom-[120px] left-1/2 -translate-x-1/2 flex flex-col w-[330px] items-center justify-center px-10 py-5 bg-[#568eff] rounded-[40px] h-auto hover:bg-[#4a7de6]">
