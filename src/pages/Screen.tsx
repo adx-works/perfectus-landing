@@ -10,6 +10,7 @@ import { HeroSection } from "./sections/HeroSection";
 import { ServicesSection } from "./sections/ServicesSection";
 import { SpecialistsSection } from "./sections/SpecialistsSection";
 import { PhotoCarousel } from "@/components/PhotoCarousel";
+import { SEOHead } from "../components/SEOHead";
 
 const specialists = [
   {
@@ -90,27 +91,30 @@ export const Screen = (): JSX.Element => {
   }, []);
 
   return (
-    <div className="bg-[#ffffff] w-full relative">
+    <>
+      <SEOHead />
+      <div className="bg-[#ffffff] w-full relative">
       <div className="w-full max-w-[1440px] mx-auto mb-8">
         <HeaderSection />
       </div>
 
-      <section className="relative w-full">
+      <main>
+      <section className="relative w-full" aria-label="Главный баннер клиники">
         <div className="relative w-full max-w-[1440px] mx-auto px-10">
           <div className="relative w-full h-[640px] rounded-[40px] overflow-hidden">
             <img
               className="absolute inset-0 w-full h-full object-cover"
-              alt="Rectangle"
+              alt="Фон главного баннера стоматологической клиники Перфектус"
               src="/figmaAssets/rectangle-6.svg"
             />
             <img
               className="absolute inset-0 w-full h-full object-cover"
-              alt="Mask group"
+              alt="Интерьер современной стоматологической клиники Перфектус в Приозерске"
               src="/figmaAssets/mask-group.png"
             />
             <img
               className="absolute inset-0 w-[80%] h-[80%] object-cover top-[20.5%] left-[10%]"
-              alt="Mask group"
+              alt="Современное стоматологическое оборудование в клинике Перфектус"
               src="/figmaAssets/mask-group-1.png"
             />
 
@@ -151,12 +155,12 @@ export const Screen = (): JSX.Element => {
             </div>
 
             <div className="absolute top-[200px] left-1/2 -translate-x-1/2 w-[990px] flex flex-col items-center gap-[20px]">
-              <h2 className="[font-family:'Manrope',Helvetica] font-semibold text-[#ffffff] text-[24px] text-center tracking-[-0.25px] leading-[1.2] mt-10">
-                СТОМАТОЛОГИЧЕСКАЯ КЛИНИКА
-              </h2>
               <h1 className="[font-family:'Manrope',Helvetica] font-bold text-[#ffffff] text-[80px] text-center tracking-[-0.25px] leading-[1.1]">
-                «ПЕРФЕКТУС»
+                СТОМАТОЛОГИЧЕСКАЯ КЛИНИКА «ПЕРФЕКТУС»
               </h1>
+              <p className="[font-family:'Manrope',Helvetica] font-semibold text-[#ffffff] text-[24px] text-center tracking-[-0.25px] leading-[1.2] mt-4">
+                Современная стоматология в Приозерске
+              </p>
             </div>
 
             <Button asChild className="absolute bottom-[120px] left-1/2 -translate-x-1/2 flex flex-col w-[330px] items-center justify-center px-10 py-5 bg-[#568eff] rounded-[40px] h-auto hover:bg-[#4a7de6]">
@@ -179,17 +183,17 @@ export const Screen = (): JSX.Element => {
         </div>
       </section>
 
-      <div id="services" className="w-full max-w-[1440px] mx-auto mt-8 mb-8">
+      <section id="services" className="w-full max-w-[1440px] mx-auto mt-8 mb-8" aria-label="Призыв к действию">
         <HeroCallToActionSection />
-      </div>
+      </section>
 
-      <div className="w-full bg-[#f8f9fc] py-20 scroll-mt-24">
+      <section className="w-full bg-[#f8f9fc] py-20 scroll-mt-24" aria-label="Наши услуги">
         <div className="w-full max-w-[1440px] mx-auto">
           <ServicesSection />
         </div>
-      </div>
+      </section>
 
-      <section id="specialists" className="relative w-full py-20 flex flex-col items-center gap-12">
+      <section id="specialists" className="relative w-full py-20 flex flex-col items-center gap-12" aria-label="Наши специалисты">
         <div className="w-full max-w-[1440px] mx-auto">
           <SpecialistsSection />
         </div>
@@ -218,7 +222,7 @@ export const Screen = (): JSX.Element => {
                 <CardContent className="p-0 flex-1 grow relative self-stretch w-full bg-[#f8f9fc] rounded-[30px] overflow-hidden">
                   <img
                     className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105"
-                    alt={specialist.name}
+                    alt={`Фотография врача-стоматолога ${specialist.name} из клиники Перфектус`}
                     src={specialist.image}
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent from-[65%] to-[rgba(0,0,0,0.75)]" />
@@ -237,17 +241,17 @@ export const Screen = (): JSX.Element => {
         </div>
       </section>
 
-      <div className="w-full max-w-[1440px] mx-auto">
+      <section className="w-full max-w-[1440px] mx-auto" aria-label="Фотографии клиники">
         <ClinicPhotosSection />
-      </div>
+      </section>
 
-      <div className="w-full max-w-[1440px] mx-auto px-10 py-10">
+      <section className="w-full max-w-[1440px] mx-auto px-10 py-10" aria-label="Галерея работ">
         <PhotoCarousel />
-      </div>
+      </section>
+      </main>
 
-      <div className="w-full max-w-[1440px] mx-auto">
-        <FooterSection />
-      </div>
+      <FooterSection />
     </div>
+    </>
   );
 };

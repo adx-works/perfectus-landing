@@ -16,13 +16,13 @@ const navigationItems = [
 
 export const HeaderSection = (): JSX.Element => {
   return (
-    <header className="flex w-full max-w-[1440px] items-center justify-between px-4 py-6 relative mx-auto bg-transparent">
+    <header className="flex w-full max-w-[1440px] items-center justify-between px-4 py-6 relative mx-auto bg-transparent" role="banner">
       <div className="inline-flex items-center gap-10 relative flex-[0_0_auto]">
         <Link href="/">
           <div className="inline-flex h-[43px] items-center gap-3 relative flex-[0_0_auto] cursor-pointer">
             <img
               className="relative w-[43.2px] h-[43.2px]"
-              alt="Frame"
+              alt="Логотип стоматологической клиники Перфектус"
               src="/figmaAssets/frame-12343899.svg"
             />
             <div className="relative w-fit [font-family:'Manrope',Helvetica] font-semibold text-black text-xl tracking-[-0.21px] leading-[normal]">
@@ -32,7 +32,7 @@ export const HeaderSection = (): JSX.Element => {
         </Link>
 
         <NavigationMenu>
-          <NavigationMenuList className="flex items-center gap-4">
+          <NavigationMenuList className="flex items-center gap-4" role="navigation" aria-label="Основная навигация">
             {navigationItems.map((item, index) => (
               <NavigationMenuItem key={index}>
                 <NavigationMenuLink asChild>
@@ -67,7 +67,7 @@ export const HeaderSection = (): JSX.Element => {
         <div className="inline-flex items-center gap-[9px] relative flex-[0_0_auto]">
           <img
             className="relative w-10 h-10"
-            alt="Frame"
+            alt="Иконка телефона для записи на прием"
             src="/figmaAssets/frame-12343950.svg"
           />
           <div className="inline-flex flex-col items-start relative flex-[0_0_auto]">

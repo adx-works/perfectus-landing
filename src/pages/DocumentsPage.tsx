@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { HeaderSection } from "./sections/HeaderSection";
 import { FooterSection } from "./sections/FooterSection";
+import { SEOHead } from "../components/SEOHead";
 
 export default function DocumentsPage() {
   useEffect(() => {
@@ -8,7 +9,14 @@ export default function DocumentsPage() {
   }, []);
 
   return (
-    <div className="bg-white min-h-screen flex flex-col">
+    <>
+      <SEOHead
+        title="Документы и лицензии стоматологии Перфектус в Приозерске"
+        description="Документы, лицензии и сертификаты стоматологической клиники Перфектус в Приозерске. Официальные разрешения на медицинскую деятельность."
+        keywords="документы стоматологии, лицензия стоматологическая клиника, сертификаты врачей, Перфектус документы, медицинская лицензия Приозерск"
+        canonicalUrl="https://перфектус.рф/documents"
+      />
+      <div className="bg-white min-h-screen flex flex-col">
       <div className="w-full max-w-[1440px] mx-auto">
         <HeaderSection />
       </div>
@@ -37,5 +45,6 @@ export default function DocumentsPage() {
         <FooterSection />
       </div>
     </div>
+    </>
   );
 }

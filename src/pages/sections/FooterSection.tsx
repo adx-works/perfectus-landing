@@ -23,7 +23,7 @@ const workingHours = [
 
 export const FooterSection = (): JSX.Element => {
   return (
-    <footer className="flex w-full items-center gap-10 px-6 lg:px-10 py-8 relative bg-transparent">
+    <footer className="flex w-full items-center gap-10 px-6 lg:px-10 py-8 relative bg-transparent w-full max-w-[1440px] mx-auto" role="contentinfo">
       <div className="relative w-full lg:w-[641px] h-[400px] lg:h-auto lg:self-stretch rounded-[30px] overflow-hidden">
         <div className="relative overflow-hidden w-full h-full">
           <a 
@@ -54,7 +54,7 @@ export const FooterSection = (): JSX.Element => {
             <div className="flex items-center gap-6 relative flex-1">
               <img
                 className="relative w-[53px] h-[53px]"
-                alt="Frame"
+                alt="Логотип стоматологической клиники Перфектус"
                 src="/figmaAssets/frame-12343899-1.svg"
               />
 
@@ -75,7 +75,7 @@ export const FooterSection = (): JSX.Element => {
               <a href="tel:+79218737073">
                 <img
                   className="relative w-[18px] h-[18px]"
-                  alt="Vector"
+                  alt="Иконка телефона для связи со стоматологией"
                   src="/figmaAssets/vector.svg"
                 />
 
@@ -107,7 +107,7 @@ export const FooterSection = (): JSX.Element => {
                 ) : (
                   <img
                     className="relative w-10 h-10"
-                    alt="Frame"
+                    alt={contact.label.includes('адресу') ? 'Иконка местоположения клиники' : 'Иконка контактной информации'}
                     src={contact.icon}
                   />
                 )}

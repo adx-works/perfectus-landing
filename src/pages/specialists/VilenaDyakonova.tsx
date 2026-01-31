@@ -1,4 +1,5 @@
 import { SpecialistProfile } from "./SpecialistProfile";
+import { SEOHead } from "../../components/SEOHead";
 
 export default function VilenaDyakonova() {
   const education = [
@@ -194,13 +195,37 @@ export default function VilenaDyakonova() {
     }
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Дьяконова Вилена Викторовна",
+    "jobTitle": "Главный врач, врач стоматолог-ортопед, терапевт, хирург",
+    "worksFor": {
+      "@type": "Dentist",
+      "name": "Стоматологическая клиника Перфектус"
+    },
+    "alumniOf": "Первый Санкт-Петербургский государственный медицинский университет им. акад. И.П. Павлова",
+    "image": "/specialists/vilena-dyakonova.png",
+    "url": "https://перфектус.рф/specialists/dyakonova"
+  };
+
   return (
-    <SpecialistProfile 
+    <>
+      <SEOHead
+        title="Дьяконова Вилена Викторовна - Главный врач стоматологии Перфектус в Приозерске"
+        description="Дьяконова Вилена Викторовна - главный врач, стоматолог-ортопед, терапевт, хирург клиники Перфектус в Приозерске. Опыт работы более 25 лет. Запись на прием +7 (921) 873-70-73."
+        keywords="Дьяконова Вилена Викторовна, главный врач стоматолог, ортопед стоматолог Приозерск, стоматолог-терапевт, стоматолог-хирург, Перфектус"
+        canonicalUrl="https://перфектус.рф/specialists/dyakonova"
+        ogImage="https://перфектус.рф/specialists/vilena-dyakonova.png"
+        structuredData={structuredData}
+      />
+      <SpecialistProfile 
       name="Дьяконова Вилена Викторовна"
       role="Главный врач, врач стоматолог-ортопед, терапевт, хирург"
       experience="28 лет"
       image="/specialists/vilena-dyakonova.png"
       education={education}
-    />
+      />
+    </>
   );
 }
