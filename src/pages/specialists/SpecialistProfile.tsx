@@ -3,6 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import { HeaderSection } from "../sections/HeaderSection";
 import { FooterSection } from "../sections/FooterSection";
 import { Card, CardContent } from "@/components/ui/card";
+import { useEffect } from "react";
 
 interface Education {
   type: string;
@@ -19,11 +20,18 @@ interface SpecialistProfileProps {
 }
 
 export const SpecialistProfile = ({ name, role, experience, image, education }: SpecialistProfileProps) => {
+  // Прокрутка в верх страницы при загрузке
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-white min-h-screen">
-      <HeaderSection />
+      <div className="w-full max-w-[1440px] mx-auto">
+        <HeaderSection />
+      </div>
       
-      <main className="max-w-[1360px] mx-auto px-4 py-12">
+      <main className="w-full max-w-[1440px] mx-auto px-10 py-12">
         <Link href="/#specialists">
           <div className="inline-flex items-center gap-4 mb-12 cursor-pointer group">
             <div className="p-2 rounded-full bg-[#f8f9fc] group-hover:bg-[#eef1f7] transition-colors">
@@ -88,7 +96,9 @@ export const SpecialistProfile = ({ name, role, experience, image, education }: 
         </section>
       </main>
 
-      <FooterSection />
+      <div className="w-full max-w-[1440px] mx-auto">
+        <FooterSection />
+      </div>
     </div>
   );
 };

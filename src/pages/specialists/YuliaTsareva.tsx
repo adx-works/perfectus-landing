@@ -3,9 +3,9 @@ import { SpecialistProfile } from "./SpecialistProfile";
 export default function YuliaTsareva() {
   const education = [
     {
-      type: "Основное образование",
-      institution: "Название учебного заведения/организации",
-      date: "01.07.2012"
+      type: "Основное образование", 
+      institution: "2001 г. — Первый Санкт-Петербургский государственный медицинский университет им. акад. И.П. Павлова",
+      date: "2001"
     }
   ];
 
@@ -13,8 +13,8 @@ export default function YuliaTsareva() {
     <SpecialistProfile 
       name="Царева Юлия Анатольевна"
       role="Врач-стоматолог общей практики"
-      experience="12 лет"
-      image="/figmaAssets/image.png"
+      experience="24 года"
+      image="/specialists/tsareva.png"
       education={education}
     />
   );

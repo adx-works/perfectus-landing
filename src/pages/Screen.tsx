@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -14,21 +15,21 @@ const specialists = [
   {
     name: "Дьяконова Вилена Викторовна",
     role: "Главный врач, врач стоматолог-ортопед, терапевт, хирург",
-    image: "/figmaAssets/image-929.png",
+    image: "/specialists/vilena-dyakonova.png",
     hasGradient: false,
     slug: "dyakonova"
   },
   {
     name: "Царева Юлия Анатольевна",
     role: "Врач-стоматолог\nобщей практики",
-    image: "/figmaAssets/image.png",
+    image: "/specialists/tsareva.png",
     hasGradient: true,
     slug: "tsareva"
   },
   {
     name: "Гогина Алина Владимировна",
     role: "Врач-стоматолог\nобщей практики",
-    image: "/figmaAssets/image-1.png",
+    image: "/specialists/gogina.png",
     hasGradient: true,
     slug: "gogina"
   },
@@ -74,6 +75,20 @@ const clinicPhotos = [
 ];
 
 export const Screen = (): JSX.Element => {
+  // Прокрутка к якорю при загрузке страницы с хешем (#services, #specialists и т.д.)
+  useEffect(() => {
+    const hash = window.location.hash.slice(1);
+    if (hash) {
+      const el = document.getElementById(hash);
+      if (el) {
+        const scroll = () => el.scrollIntoView({ behavior: "smooth", block: "start" });
+        // Небольшая задержка, чтобы контент успел отрендериться
+        const t = setTimeout(scroll, 100);
+        return () => clearTimeout(t);
+      }
+    }
+  }, []);
+
   return (
     <div className="bg-[#ffffff] w-full relative">
       <div className="w-full max-w-[1440px] mx-auto mb-8">
@@ -162,11 +177,11 @@ export const Screen = (): JSX.Element => {
         </div>
       </section>
 
-      <div className="w-full max-w-[1440px] mx-auto mt-8 mb-8">
+      <div id="services" className="w-full max-w-[1440px] mx-auto mt-8 mb-8">
         <HeroCallToActionSection />
       </div>
 
-      <div className="w-full bg-[#f8f9fc] py-20">
+      <div className="w-full bg-[#f8f9fc] py-20 scroll-mt-24">
         <div className="w-full max-w-[1440px] mx-auto">
           <ServicesSection />
         </div>
@@ -181,12 +196,14 @@ export const Screen = (): JSX.Element => {
           <Card className="w-[317px] h-[415px] rounded-[30px] bg-[linear-gradient(39deg,rgba(86,142,255,1)_0%,rgba(158,186,195,1)_100%)] border-0 relative overflow-hidden">
             <CardContent className="p-0 h-full flex flex-col justify-between py-[35px] px-[35px] relative z-10">
               <p className="font-semibold text-[22px] tracking-[-0.20px] leading-[26.4px] [font-family:'Manrope',Helvetica] text-[#ffffff]">
-                28 лет опыта
+                Опытная команда
                 <br />
-                работы у глав врача, <br />у другого – 24
+                специалистов с многолетней
+                <br />
+                практикой
               </p>
               <p className="[font-family:'Manrope',Helvetica] font-normal text-[#ffffff] text-[22px] tracking-[-0.20px] leading-[26.4px]">
-                *ещё что-нибудь про команду, либо убрать блок
+                Наши врачи регулярно повышают квалификацию и используют современные методы лечения
               </p>
             </CardContent>
           </Card>
