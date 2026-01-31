@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ClinicPhotosSection } from "./sections/ClinicPhotosSection";
@@ -14,18 +15,21 @@ const specialists = [
     role: "Главный врач, врач стоматолог-ортопед, терапевт, хирург",
     image: "/figmaAssets/image-929.png",
     hasGradient: false,
+    slug: "dyakonova"
   },
   {
     name: "Царева Юлия Анатольевна",
     role: "Врач-стоматолог\nобщей практики",
     image: "/figmaAssets/image.png",
     hasGradient: true,
+    slug: "tsareva"
   },
   {
     name: "Гогина Алина Владимировна",
     role: "Врач-стоматолог\nобщей практики",
     image: "/figmaAssets/image-1.png",
     hasGradient: true,
+    slug: "gogina"
   },
 ];
 
@@ -145,27 +149,28 @@ export const Screen = (): JSX.Element => {
           </Card>
 
           {specialists.map((specialist, index) => (
-            <Card
-              key={index}
-              className="flex flex-col w-[318px] h-[415px] items-center gap-[11px] border-0 bg-transparent"
-            >
-              <CardContent className="p-0 flex-1 grow relative self-stretch w-full bg-[#f8f9fc] rounded-[30px] overflow-hidden">
-                <img
-                  className="absolute inset-0 w-full h-full object-cover"
-                  alt={specialist.name}
-                  src={specialist.image}
-                />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent from-[65%] to-[rgba(0,0,0,0.75)]" />
-                <div className="flex flex-col w-full items-center gap-2.5 absolute bottom-5 px-4">
-                  <h3 className="font-semibold text-[#ffffff] text-2xl tracking-[-0.20px] leading-[28.8px] relative self-stretch [font-family:'Manrope',Helvetica] text-center">
-                    {specialist.name}
-                  </h3>
-                </div>
-              </CardContent>
-              <p className="font-medium text-[rgba(0,0,0,0.85)] text-[17px] tracking-[-0.17px] leading-[23.8px] relative self-stretch [font-family:'Manrope',Helvetica] text-center whitespace-pre-line">
-                {specialist.role}
-              </p>
-            </Card>
+            <Link key={index} href={`/specialists/${specialist.slug}`}>
+              <Card
+                className="flex flex-col w-[318px] h-[415px] items-center gap-[11px] border-0 bg-transparent cursor-pointer group"
+              >
+                <CardContent className="p-0 flex-1 grow relative self-stretch w-full bg-[#f8f9fc] rounded-[30px] overflow-hidden">
+                  <img
+                    className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105"
+                    alt={specialist.name}
+                    src={specialist.image}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent from-[65%] to-[rgba(0,0,0,0.75)]" />
+                  <div className="flex flex-col w-full items-center gap-2.5 absolute bottom-5 px-4">
+                    <h3 className="font-semibold text-[#ffffff] text-2xl tracking-[-0.20px] leading-[28.8px] relative self-stretch [font-family:'Manrope',Helvetica] text-center">
+                      {specialist.name}
+                    </h3>
+                  </div>
+                </CardContent>
+                <p className="font-medium text-[rgba(0,0,0,0.85)] text-[17px] tracking-[-0.17px] leading-[23.8px] relative self-stretch [font-family:'Manrope',Helvetica] text-center whitespace-pre-line">
+                  {specialist.role}
+                </p>
+              </Card>
+            </Link>
           ))}
         </div>
       </section>
