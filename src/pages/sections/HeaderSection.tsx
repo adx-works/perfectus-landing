@@ -11,7 +11,7 @@ const navigationItems = [
   { label: "Наша клиника", href: "/" },
   { label: "Услуги", href: "#services" },
   { label: "Специалисты", href: "#specialists" },
-  { label: "Документы", href: "#documents" },
+  { label: "Документы", href: "/documents" },
 ];
 
 export const HeaderSection = (): JSX.Element => {
@@ -74,9 +74,12 @@ export const HeaderSection = (): JSX.Element => {
             <div className="relative self-stretch [font-family:'Manrope',Helvetica] font-semibold text-[#a4a4a4] text-sm tracking-[-0.10px] leading-[21px]">
               Запись по телефону:
             </div>
-            <div className="self-stretch font-medium text-textdark text-sm tracking-[-0.10px] leading-[21px] relative [font-family:'Manrope',Helvetica]">
+            <a 
+              href="tel:+79218737073" 
+              className="self-stretch font-medium text-textdark text-sm tracking-[-0.10px] leading-[21px] relative [font-family:'Manrope',Helvetica] hover:text-[#587675] transition-colors cursor-pointer"
+            >
               +7 (921) 873-70-73
-            </div>
+            </a>
           </div>
         </div>
       </div>

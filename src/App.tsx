@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 
 import { Screen } from "@/pages/Screen";
+import DocumentsPage from "@/pages/DocumentsPage";
 import VilenaDyakonova from "@/pages/specialists/VilenaDyakonova";
 import YuliaTsareva from "@/pages/specialists/YuliaTsareva";
 import AlinaGogina from "@/pages/specialists/AlinaGogina";
@@ -15,6 +16,7 @@ function Router() {
     <Switch>
       {/* Add pages below */}
       <Route path="/" component={Screen} />
+      <Route path="/documents" component={DocumentsPage} />
       <Route path="/specialists/dyakonova" component={VilenaDyakonova} />
       <Route path="/specialists/tsareva" component={YuliaTsareva} />
       <Route path="/specialists/gogina" component={AlinaGogina} />
