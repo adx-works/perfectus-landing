@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="container">
-      <img src="~/assets/images/logo.svg" alt="Logo" class="logo">
+      <img src="~/assets/images/logo.svg" alt="Логотип стоматологической клиники Перфектус" class="logo">
       <nav class="nav" :class="{ 'open': isMenuOpen }">
         <NuxtLink to="/" active-class="active" @click="closeMenu">Наша клиника</NuxtLink>
         <NuxtLink to="/#services" active-class="active" @click="closeMenu">Услуги</NuxtLink>

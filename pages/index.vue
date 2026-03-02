@@ -4,11 +4,11 @@
         <div class="container">
           <picture>
             <source media="(max-width:1024px )" srcset="~/assets/images/bg-mobile.png">
-            <img src="~/assets/images/bg.png" class="bg">
+            <img src="~/assets/images/bg.png" class="bg" alt="Фон стоматологической клиники Перфектус">
           </picture>
             <picture>
               <source media="(max-width:1024px )" srcset="~/assets/images/tooth-mobile.png">
-              <img src="~/assets/images/tooth.png" class="tooth">
+              <img src="~/assets/images/tooth.png" class="tooth" alt="Декоративное изображение зуба">
             </picture>
             <div class="hero__content">
                 <div class="hero__stats">
@@ -50,7 +50,7 @@
           <div class="container">
             <div class="services-section__item">
               <div class="services-section__item-top">
-                   <img src="~/assets/images/icon1.svg" class="icon">
+                   <img src="~/assets/images/icon1.svg" class="icon" alt="Иконка ортопедии и протезирования">
                    Ортопедия <br> и протезирование
               </div>
               <p>Замещение отсутствующих зубов, <br> восстановление красоты зубного ряда</p>
@@ -69,7 +69,7 @@
             </div>
             <div class="services-section__item">
               <div class="services-section__item-top">
-                   <img src="~/assets/images/icon2.svg" class="icon">
+                   <img src="~/assets/images/icon2.svg" class="icon" alt="Иконка терапевтического лечения зубов">
                    Терапевтическое лечение зубов
               </div>
               <p>Лечени кариеса, пульпита, периодонтита</p>
@@ -88,7 +88,7 @@
             </div>
             <div class="services-section__item">
               <div class="services-section__item-top">
-                   <img src="~/assets/images/icon3.svg" class="icon">
+                   <img src="~/assets/images/icon3.svg" class="icon" alt="Иконка пародонтологии">
                    Пародонтология
               </div>
               <p>Устранение подвижности зубов лечением десен, шинированием, протезированием</p>
@@ -108,7 +108,7 @@
 
             <div class="services-section__item">
               <div class="services-section__item-top">
-                   <img src="~/assets/images/icon4.svg" class="icon">
+                   <img src="~/assets/images/icon4.svg" class="icon" alt="Иконка эстетической стоматологии">
                    Эстетическая стоматология
               </div>
               <p>Профессиональное и безопасное отбеливание зубов</p>
@@ -127,7 +127,7 @@
             </div>
             <div class="services-section__item">
               <div class="services-section__item-top">
-                   <img src="~/assets/images/icon5.svg" class="icon">
+                   <img src="~/assets/images/icon5.svg" class="icon" alt="Иконка профессиональной гигиены">
                   Профессиональная <br> гигиена
               </div>
               <p>Удаление зубных камней и налета <br> ультразвуком, airflow</p>
@@ -146,7 +146,7 @@
             </div>
             <div class="services-section__item">
               <div class="services-section__item-top">
-                   <img src="~/assets/images/icon6.svg" class="icon">
+                   <img src="~/assets/images/icon6.svg" class="icon" alt="Иконка хирургической стоматологии">
                    Хирургическая стоматология 
               </div>
               <p>Удаление зубов, разрезы, закрытый/открытый кюретаж</p>
@@ -237,7 +237,7 @@
       <div class="slide-content">
         <img 
           :src="slide.imageUrl" 
-          :alt="'Gallery image ' + slide.id"
+          :alt="'Фото клиники Перфектус - интерьер ' + slide.id"
           class="product-image"
         >
       </div>

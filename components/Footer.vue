@@ -7,10 +7,10 @@
         <div class="footer__info">
           <div class="footer__info-top">
               <a href="https://vk.com/perfdentis" class="footer__info-link" target="_blank" rel="noopener noreferrer">
-                <img src="~/assets/images/vk.svg" alt="">
+                <img src="~/assets/images/vk.svg" alt="Иконка ВКонтакте">
               </a>
               <div class="logo">
-                <img src="~/assets/images/logo-icon.png" alt="">
+                <img src="~/assets/images/logo-icon.png" alt="Логотип Перфектус">
                 <div class="logo-wrap">
                     Перфектус
                     <span>Стоматологическая клиника </span>
@@ -35,8 +35,8 @@
             </div>
             <div class="footer__info-times">
                 <div class="footer__info-times-title">Время работы:</div>
-                <p>Будни — 9:30 - 20:00</p>
-                <p>Сб — 9:30 - 16:00</p>
+                <p>Будни — 10:00 - 20:00</p>
+                <p>Сб — 09:00 - 16:00</p>
                 <p>Вс — Выходной</p>
             </div>
           </div>
