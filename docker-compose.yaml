@@ -1,0 +1,32 @@
+services:
+
+  traefik:
+    image: traefik:v3.0
+    restart: always
+    command:
+      - --entrypoints.http.address=:80
+      - --entrypoints.https.address=:443
+      - --providers.docker
+      - --providers.docker.exposedByDefault=false
+      - --certificatesresolvers.letsEncrypt.acme.email=team@shamps.dev
+      - --certificatesresolvers.letsEncrypt.acme.storage=/letsencrypt/acme.json
+      - --certificatesresolvers.letsEncrypt.acme.httpchallenge.entrypoint=http
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./letsencrypt:/letsencrypt
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  perfectus:
+    image: shampiniony/perfectus:latest
+    restart: always
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.perfectus.rule=Host(`xn--e1aaprgigif.xn--p1ai`)
+      - traefik.http.routers.perfectus.entrypoints=https
+      - traefik.http.routers.perfectus.tls.certresolver=letsEncrypt
+      - traefik.http.services.perfectus.loadbalancer.server.port=3000
+
+volumes:
+  letsencrypt:
