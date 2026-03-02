@@ -1,2 +1,17 @@
 User-Agent: *
-Disallow:
+Allow: /
+
+Disallow: /_nuxt/
+Disallow: /api/
+Disallow: /.well-known/
+
+Sitemap: https://perfectus-dent.ru/sitemap.xml
+
+User-Agent: Googlebot
+Allow: /
+
+User-Agent: Yandex
+Allow: /
+
+User-Agent: Bingbot
+Allow: /
