@@ -45,10 +45,10 @@
                             <a href="mailto:perf-dent@yandex.ru">perf-dent@yandex.ru</a>
                         </div>
                     </div>
-                    <img src="~/assets/images/tooth-contacts.png" alt="" class="contat-us__info-img">
+                    <img src="~/assets/images/tooth-contacts.png" alt="Декоративное изображение зуба" class="contat-us__info-img">
                 </div>
             </div>
-            <img src="~/assets/images/contat-us.png" alt="" class="contat-us__img">
+            <img src="~/assets/images/contat-us.png" alt="Изображение стоматологического кабинета" class="contat-us__img">
         </div>
      </section>
   </div>
@@ -56,6 +56,22 @@
 
 <script setup lang="ts">
 const router = useRouter()
+
+useHead({
+  title: 'Врачи стоматологи в Приозерске - Специалисты клиники Перфектус',
+  meta: [
+    { 
+      name: 'description', 
+      content: 'Опытные врачи-стоматологи клиники Перфектус в Приозерске. Ортопеды, терапевты, хирурги с многолетним стажем. Современные методы лечения и индивидуальный подход к каждому пациенту.' 
+    },
+    { 
+      name: 'keywords', 
+      content: 'врачи стоматологи Приозерск, стоматолог ортопед, стоматолог терапевт, стоматолог хирург, опытные врачи, Дьяконова, Царева, Гогина' 
+    },
+    { property: 'og:title', content: 'Врачи стоматологи в Приозерске - Специалисты клиники Перфектус' },
+    { property: 'og:description', content: 'Опытные врачи-стоматологи клиники Перфектус в Приозерске. Ортопеды, терапевты, хирурги с многолетним стажем.' }
+  ]
+})
 
 const specialists = [
   {

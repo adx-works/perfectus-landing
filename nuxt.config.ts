@@ -28,7 +28,13 @@ export default defineNuxtConfig({
         { property: 'og:url', content: 'https://perfectus-dent.ru' },
         { property: 'og:image', content: 'https://perfectus-dent.ru/images/og-image.jpg' },
         { property: 'og:locale', content: 'ru_RU' },
-        { name: 'keywords', content: 'стоматология, зубы, лечение зубов, Приозерск, стоматолог, коронки, пломбы, протезирование' }
+        { name: 'keywords', content: 'стоматология, зубы, лечение зубов, Приозерск, стоматолог, коронки, пломбы, протезирование' },
+        { name: 'geo.region', content: 'RU-LEN' },
+        { name: 'geo.placename', content: 'Приозерск' },
+        { name: 'geo.position', content: '61.035472;30.119103' },
+        { name: 'ICBM', content: '61.035472, 30.119103' },
+        { name: 'language', content: 'ru' },
+        { name: 'country', content: 'Russia' }
       ],
       script: [
         {

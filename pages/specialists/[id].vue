@@ -162,7 +162,30 @@ if (!specialist.value) {
 
 // Метаданные
 useHead({
-  title: computed(() => specialist.value ? `${specialist.value.fullName} - Стоматология` : 'Специалист не найден'
-  )
+  title: computed(() => {
+    if (!specialist.value) return 'Специалист не найден - Стоматология Перфектус'
+    return `${specialist.value.fullName} - ${specialist.value.profile} | Стоматология Перфектус`
+  }),
+  meta: computed(() => {
+    if (!specialist.value) return []
+    return [
+      { 
+        name: 'description', 
+        content: `${specialist.value.fullName} - ${specialist.value.profile} в стоматологической клинике Перфектус в Приозерске. Опыт работы ${specialist.value.experience} лет. Запись на прием по телефону +7 (921) 873-70-73.` 
+      },
+      { 
+        name: 'keywords', 
+        content: `${specialist.value.fullName}, ${specialist.value.profile}, стоматолог Приозерск, врач стоматолог, опыт ${specialist.value.experience} лет` 
+      },
+      { 
+        property: 'og:title', 
+        content: `${specialist.value.fullName} - ${specialist.value.profile} | Стоматология Перфектус` 
+      },
+      { 
+        property: 'og:description', 
+        content: `${specialist.value.fullName} - ${specialist.value.profile} в стоматологической клинике Перфектус в Приозерске. Опыт работы ${specialist.value.experience} лет.` 
+      }
+    ]
+  })
 })
 </script>

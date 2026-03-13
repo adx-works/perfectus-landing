@@ -54,7 +54,7 @@
                    Ортопедия <br> и протезирование
               </div>
               <p>Замещение отсутствующих зубов, <br> восстановление красоты зубного ряда</p>
-              <a href="" class="download">
+              <a href="/price.pdf" class="download" target="_blank" rel="noopener noreferrer">
                   <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.800003 11.2V12.8C0.800003 13.2244 0.968574 13.6314 1.26863 13.9314C1.56869 14.2315 1.97566 14.4 2.4 14.4H12C12.4243 14.4 12.8313 14.2315 13.1314 13.9314C13.4314 13.6314 13.6 13.2244 13.6 12.8V11.2M3.2 6.40005L7.2 10.4M7.2 10.4L11.2 6.40005M7.2 10.4V0.800049" stroke="url(#paint0_linear_59_170)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                     <defs>
@@ -73,7 +73,7 @@
                    Терапевтическое лечение зубов
               </div>
               <p>Лечени кариеса, пульпита, периодонтита</p>
-              <a href="" class="download">
+              <a href="/price.pdf" class="download" target="_blank" rel="noopener noreferrer">
                   <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.800003 11.2V12.8C0.800003 13.2244 0.968574 13.6314 1.26863 13.9314C1.56869 14.2315 1.97566 14.4 2.4 14.4H12C12.4243 14.4 12.8313 14.2315 13.1314 13.9314C13.4314 13.6314 13.6 13.2244 13.6 12.8V11.2M3.2 6.40005L7.2 10.4M7.2 10.4L11.2 6.40005M7.2 10.4V0.800049" stroke="url(#paint0_linear_59_170)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                     <defs>
@@ -92,7 +92,7 @@
                    Пародонтология
               </div>
               <p>Устранение подвижности зубов лечением десен, шинированием, протезированием</p>
-              <a href="" class="download">
+              <a href="/price.pdf" class="download" target="_blank" rel="noopener noreferrer">
                   <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.800003 11.2V12.8C0.800003 13.2244 0.968574 13.6314 1.26863 13.9314C1.56869 14.2315 1.97566 14.4 2.4 14.4H12C12.4243 14.4 12.8313 14.2315 13.1314 13.9314C13.4314 13.6314 13.6 13.2244 13.6 12.8V11.2M3.2 6.40005L7.2 10.4M7.2 10.4L11.2 6.40005M7.2 10.4V0.800049" stroke="url(#paint0_linear_59_170)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                     <defs>
@@ -112,7 +112,7 @@
                    Эстетическая стоматология
               </div>
               <p>Профессиональное и безопасное отбеливание зубов</p>
-              <a href="" class="download">
+              <a href="/price.pdf" class="download" target="_blank" rel="noopener noreferrer">
                   <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.800003 11.2V12.8C0.800003 13.2244 0.968574 13.6314 1.26863 13.9314C1.56869 14.2315 1.97566 14.4 2.4 14.4H12C12.4243 14.4 12.8313 14.2315 13.1314 13.9314C13.4314 13.6314 13.6 13.2244 13.6 12.8V11.2M3.2 6.40005L7.2 10.4M7.2 10.4L11.2 6.40005M7.2 10.4V0.800049" stroke="url(#paint0_linear_59_170)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                     <defs>
@@ -131,7 +131,7 @@
                   Профессиональная <br> гигиена
               </div>
               <p>Удаление зубных камней и налета <br> ультразвуком, airflow</p>
-              <a href="" class="download">
+              <a href="/price.pdf" class="download" target="_blank" rel="noopener noreferrer">
                   <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.800003 11.2V12.8C0.800003 13.2244 0.968574 13.6314 1.26863 13.9314C1.56869 14.2315 1.97566 14.4 2.4 14.4H12C12.4243 14.4 12.8313 14.2315 13.1314 13.9314C13.4314 13.6314 13.6 13.2244 13.6 12.8V11.2M3.2 6.40005L7.2 10.4M7.2 10.4L11.2 6.40005M7.2 10.4V0.800049" stroke="url(#paint0_linear_59_170)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                     <defs>
@@ -150,7 +150,7 @@
                    Хирургическая стоматология 
               </div>
               <p>Удаление зубов, разрезы, закрытый/открытый кюретаж</p>
-              <a href="" class="download">
+              <a href="/price.pdf" class="download" target="_blank" rel="noopener noreferrer">
                   <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.800003 11.2V12.8C0.800003 13.2244 0.968574 13.6314 1.26863 13.9314C1.56869 14.2315 1.97566 14.4 2.4 14.4H12C12.4243 14.4 12.8313 14.2315 13.1314 13.9314C13.4314 13.6314 13.6 13.2244 13.6 12.8V11.2M3.2 6.40005L7.2 10.4M7.2 10.4L11.2 6.40005M7.2 10.4V0.800049" stroke="url(#paint0_linear_59_170)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                     <defs>
@@ -311,6 +311,20 @@ const goToSpecialist = (id: string) => {
   console.log('Navigating to specialist:', id)
   router.push(`/specialists/${id}`)
 }
+
+useHead({
+  title: 'Стоматология Перфектус в Приозерске | Современная стоматологическая клиника',
+  meta: [
+    { 
+      name: 'description', 
+      content: 'Стоматологическая клиника Перфектус в Приозерске. Опытные врачи, современное оборудование, безопасное лечение. Запись по телефону +7 (921) 873-70-73. Ул. Калинина, 11, 3 этаж.' 
+    },
+    { 
+      name: 'keywords', 
+      content: 'стоматология Приозерск, лечение зубов, стоматолог, коронки, пломбы, протезирование, отбеливание зубов, профессиональная гигиена' 
+    }
+  ]
+})
 </script>
 
 
