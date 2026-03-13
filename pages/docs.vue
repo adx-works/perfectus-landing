@@ -61,10 +61,10 @@
               <div class="license-info">
                 <h3>Лицензия на медицинскую деятельность</h3>
                 <div class="license-details">
-                  <p><strong>Номер лицензии:</strong> ЛО-47-01-001234</p>
-                  <p><strong>Дата выдачи:</strong> 15 марта 2012 года</p>
+                  <p><strong>Номер лицензии:</strong> </p>
+                  <p><strong>Дата выдачи:</strong> </p>
                   <p><strong>Выдана:</strong> Комитетом по здравоохранению Ленинградской области</p>
-                  <p><strong>Срок действия:</strong> бессрочно</p>
+                  <p><strong>Срок действия:</strong> </p>
                 </div>
                 <p>Разрешает оказание следующих видов медицинских услуг:</p>
                 <ul class="license-services">
@@ -84,10 +84,10 @@
               <div class="license-info">
                 <h3>Лицензия на использование источников ионизирующего излучения</h3>
                 <div class="license-details">
-                  <p><strong>Номер лицензии:</strong> СПб-47-000567</p>
-                  <p><strong>Дата выдачи:</strong> 22 мая 2012 года</p>
-                  <p><strong>Выдана:</strong> Управлением Ростехнадзора по СЗФО</p>
-                  <p><strong>Срок действия:</strong> до 22 мая 2027 года</p>
+                  <p><strong>Номер лицензии:</strong> </p>
+                  <p><strong>Дата выдачи:</strong> </p>
+                  <p><strong>Выдана:</strong> </p>
+                  <p><strong>Срок действия:</strong> </p>
                 </div>
                 <p>Разрешает использование рентгеновского оборудования для:</p>
                 <ul class="license-services">
