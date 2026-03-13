@@ -1,0 +1,342 @@
+// Версия для слабовидящих — стили по ГОСТ
+
+body.accessibility-panel-open {
+  padding-top: 100px !important;
+}
+
+// Размеры шрифтов
+body.font-small {
+  font-size: 14px !important;
+  h1 { font-size: 1.8rem !important; }
+  h2 { font-size: 1.6rem !important; }
+  h3 { font-size: 1.4rem !important; }
+  h4 { font-size: 1.2rem !important; }
+  h5 { font-size: 1.1rem !important; }
+  h6 { font-size: 1rem !important; }
+}
+
+body.font-normal {
+  /* Обычный размер — без изменений, сохраняем оригинальную вёрстку */
+}
+
+body.font-large {
+  font-size: 20px !important;
+  line-height: 1.6 !important;
+  h1 { font-size: 2.4rem !important; }
+  h2 { font-size: 2.2rem !important; }
+  h3 { font-size: 2rem !important; }
+  h4 { font-size: 1.8rem !important; }
+  h5 { font-size: 1.6rem !important; }
+  h6 { font-size: 1.4rem !important; }
+  button, .btn, a { padding: 12px 20px !important; min-height: 48px !important; }
+  input, textarea, select { padding: 12px !important; font-size: 18px !important; }
+  .container { padding: 2rem !important; }
+  section { padding: 3rem 0 !important; }
+  .nav a { padding: 15px 20px !important; }
+}
+
+// Б — Черный на белом
+body.color-b {
+  background: #ffffff !important;
+  color: #000000 !important;
+  
+  .app, .main, #__nuxt, section, .container,
+  .header, .header .container, .header .nav, .header__actions, .header__action, .header__action-wrap,
+  .hero, .hero__content, .hero__stats, .hero__stats-item, .hero__subtitle, .hero__title, .hero__tel, .hero__descr,
+  .services-section, .services-section__wrapper, .services-section__item, .services-section__item-top, .services-section__title,
+  .specialists-section, .specialists-section__inner, .specialists-section__info, .specialists-section__item, .specialists-section__item-img,
+  .gallery, .gallery__title, .gallery__adress,
+  .footer, .footer__info, .footer__info-top, .footer__info-tel, .footer__info-wrap, .footer__info-contacts, .footer__info-times,
+  .logo-wrap, .descriptor, .footer__legal,
+  .legal-info, .license-info, .license-card, .detail-card, .contact-item .contact-content, .licenses, .licenses__content, .contact-section,
+  .privacy__content, .privacy__section, .error-content,
+  .education, .education__item, .education__wrapper, .education__item-label,
+  .contat-us, .contat-us .container, .contat-us__info, .contat-us__wrap, .contat-us__contacts, .contat-us__contact, .contat-us__title, .contat-us__subtitle,
+  .specialist, .specialist-info, .specialist-info__items, .specialist-info__item,
+  .development {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  
+  .hero__stats-item { background: rgba(0, 0, 0, 0.05) !important; }
+  .services-section__wrapper { background: #f0f0f0 !important; }
+  .license-details, .education .container { background: #f5f5f5 !important; }
+  
+  h1, h2, h3, h4, h5, h6, p, span, .name, .footer__info-times p { color: #000000 !important; }
+  a { color: #0000aa !important; text-decoration: underline !important; }
+  a:hover { color: #0000aa !important; }
+  
+  .download, .specialists-section__top a, .footer__info-tel a, .docs-link, .prev,
+  .hero__tel, .normal-version-btn {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border-color: #000000 !important;
+  }
+  .footer__info-tel a, .hero__tel, .hero__tel span, .download, .download span, .specialists-section__top a { color: #ffffff !important; }
+  * { transition: none !important; }
+  *:hover { background-color: inherit !important; color: inherit !important; border-color: inherit !important; box-shadow: none !important; transform: none !important; }
+  .download:hover, .specialists-section__top a:hover, .footer__info-tel a:hover { background: #000000 !important; color: #ffffff !important; }
+  .download:hover::before { opacity: 0 !important; }
+  .specialists-section__item:hover img { transform: none !important; }
+  .services-section__item:hover { box-shadow: none !important; }
+  
+  .header__action-icon { background: #333333 !important; }
+  .header { background: #ffffff !important; border-bottom: 2px solid #000000 !important; }
+  .header .nav a, .header__action span, .header__action p, .header__action a, .contat-us__contact a { color: #000000 !important; }
+  .header .nav a.active { color: #0000aa !important; font-weight: 700 !important; }
+  .hero__subtitle, .hero__title, .services-section__title, .gallery__title, .specialists-section__title, .contat-us__title { color: #000000 !important; font-weight: 800 !important; text-shadow: none !important; -webkit-text-fill-color: #000000 !important; }
+  .contat-us__subtitle, .education__item-label span { -webkit-text-fill-color: #000000 !important; color: #000000 !important; }
+}
+
+// Ч — Белый на черном
+body.color-ch {
+  background: #000000 !important;
+  color: #ffffff !important;
+  
+  .app, .main, #__nuxt, section, .container,
+  .header, .header .container, .header .nav, .header__actions, .header__action, .header__action-wrap,
+  .hero, .hero__content, .hero__stats, .hero__stats-item, .hero__subtitle, .hero__title, .hero__tel, .hero__descr,
+  .services-section, .services-section__wrapper, .services-section__item, .services-section__item-top, .services-section__title,
+  .specialists-section, .specialists-section__inner, .specialists-section__info, .specialists-section__item, .specialists-section__item-img,
+  .gallery, .gallery__title, .gallery__adress,
+  .footer, .footer__info, .footer__info-top, .footer__info-tel, .footer__info-wrap, .footer__info-contacts, .footer__info-times,
+  .logo-wrap, .descriptor, .footer__legal,
+  .legal-info, .license-info, .license-card, .detail-card, .contact-item .contact-content, .licenses, .licenses__content, .contact-section,
+  .privacy__content, .privacy__section, .error-content,
+  .education, .education__item, .education__wrapper, .education__item-label,
+  .contat-us, .contat-us .container, .contat-us__info, .contat-us__wrap, .contat-us__contacts, .contat-us__contact, .contat-us__title, .contat-us__subtitle,
+  .specialist, .specialist-info, .specialist-info__items, .specialist-info__item,
+  .development, .accessibility-controls, .controls-toolbar {
+    background: #000000 !important;
+    color: #ffffff !important;
+  }
+  
+  .hero__stats-item { background: rgba(255, 255, 255, 0.1) !important; }
+  .services-section__wrapper { background: #1a1a1a !important; }
+  .license-details, .education .container { background: #1a1a1a !important; }
+  
+  h1, h2, h3, h4, h5, h6, p, span, .name, .footer__info-times p { color: #ffffff !important; }
+  a { color: #66b3ff !important; text-decoration: underline !important; }
+  a:hover { color: #66b3ff !important; }
+  
+  .download, .specialists-section__top a, .footer__info-tel a, .docs-link, .prev,
+  .hero__tel, .normal-version-btn {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+  }
+  .footer__info-tel a, .hero__tel, .hero__tel span, .download, .download span, .specialists-section__top a { color: #000000 !important; }
+  * { transition: none !important; }
+  *:hover { background-color: inherit !important; color: inherit !important; border-color: inherit !important; box-shadow: none !important; transform: none !important; }
+  .download:hover, .specialists-section__top a:hover, .footer__info-tel a:hover { background: #ffffff !important; color: #000000 !important; }
+  .download:hover::before { opacity: 0 !important; }
+  .specialists-section__item:hover img { transform: none !important; }
+  .services-section__item:hover { box-shadow: none !important; }
+  
+  .header__action-icon { background: #333333 !important; }
+  .header { background: #000000 !important; border-bottom: 2px solid #ffffff !important; }
+  .header .nav a, .header__action span, .header__action p, .header__action a, .contat-us__contact a { color: #ffffff !important; }
+  .header .nav a.active { color: #66b3ff !important; }
+  .hero__subtitle, .hero__title, .services-section__title, .gallery__title, .specialists-section__title, .contat-us__title { color: #ffffff !important; font-weight: 800 !important; text-shadow: none !important; -webkit-text-fill-color: #ffffff !important; }
+  .specialists-section__item p, .services-section__item p, .services-section p { color: #cccccc !important; }
+  .toolbar-label, .control-group label { color: #ffffff !important; }
+  .contat-us__subtitle, .education__item-label span { -webkit-text-fill-color: #ffffff !important; color: #ffffff !important; }
+}
+
+// Г — Темно-синий на голубом
+body.color-g {
+  background: #87ceeb !important;
+  color: #000d4d !important;
+  
+  .app, .main, #__nuxt, section, .container,
+  .header, .header .container, .header .nav, .header__actions, .header__action, .header__action-wrap,
+  .hero, .hero__content, .hero__stats, .hero__stats-item, .hero__subtitle, .hero__title, .hero__tel, .hero__descr,
+  .services-section, .services-section__wrapper, .services-section__item, .services-section__item-top, .services-section__title,
+  .specialists-section, .specialists-section__inner, .specialists-section__info, .specialists-section__item, .specialists-section__item-img,
+  .gallery, .gallery__title, .gallery__adress,
+  .footer, .footer__info, .footer__info-top, .footer__info-tel, .footer__info-wrap, .footer__info-contacts, .footer__info-times,
+  .logo-wrap, .descriptor, .footer__legal,
+  .legal-info, .license-info, .license-card, .detail-card, .contact-item .contact-content, .licenses, .licenses__content, .contact-section,
+  .privacy__content, .privacy__section, .error-content,
+  .education, .education__item, .education__wrapper, .education__item-label,
+  .contat-us, .contat-us .container, .contat-us__info, .contat-us__wrap, .contat-us__contacts, .contat-us__contact, .contat-us__title, .contat-us__subtitle,
+  .specialist, .specialist-info, .specialist-info__items, .specialist-info__item,
+  .development {
+    background: #87ceeb !important;
+    color: #000d4d !important;
+  }
+  
+  .hero__stats-item { background: rgba(0, 13, 77, 0.1) !important; }
+  .services-section__wrapper { background: #7ec8e3 !important; }
+  .license-details, .education .container { background: #7ec8e3 !important; }
+  
+  h1, h2, h3, h4, h5, h6, p, span, .name, .footer__info-times p { color: #000d4d !important; }
+  a { color: #000080 !important; text-decoration: underline !important; }
+  a:hover { color: #000080 !important; }
+  
+  .download, .specialists-section__top a, .footer__info-tel a, .docs-link, .prev,
+  .hero__tel, .normal-version-btn {
+    background: #000d4d !important;
+    color: #87ceeb !important;
+    border-color: #000d4d !important;
+  }
+  .footer__info-tel a, .hero__tel, .hero__tel span, .download, .download span, .specialists-section__top a { color: #87ceeb !important; }
+  * { transition: none !important; }
+  *:hover { background-color: inherit !important; color: inherit !important; border-color: inherit !important; box-shadow: none !important; transform: none !important; }
+  .download:hover, .specialists-section__top a:hover, .footer__info-tel a:hover { background: #000d4d !important; color: #87ceeb !important; }
+  .download:hover::before { opacity: 0 !important; }
+  .specialists-section__item:hover img { transform: none !important; }
+  .services-section__item:hover { box-shadow: none !important; }
+  
+  .header__action-icon { background: #000d4d !important; }
+  .header { background: #87ceeb !important; border-bottom: 2px solid #000d4d !important; }
+  .header .nav a, .header__action span, .header__action p, .header__action a, .contat-us__contact a { color: #000d4d !important; }
+  .hero__subtitle, .hero__title, .services-section__title, .gallery__title, .specialists-section__title, .contat-us__title { color: #000d4d !important; font-weight: 800 !important; text-shadow: none !important; -webkit-text-fill-color: #000d4d !important; }
+  .header .nav a.active { color: #000080 !important; }
+  .contat-us__subtitle, .education__item-label span { -webkit-text-fill-color: #000d4d !important; color: #000d4d !important; }
+}
+
+// Ж — Коричневый на бежевом
+body.color-zh {
+  background: #f5f5dc !important;
+  color: #5c4033 !important;
+  
+  .app, .main, #__nuxt, section, .container,
+  .header, .header .container, .header .nav, .header__actions, .header__action, .header__action-wrap,
+  .hero, .hero__content, .hero__stats, .hero__stats-item, .hero__subtitle, .hero__title, .hero__tel, .hero__descr,
+  .services-section, .services-section__wrapper, .services-section__item, .services-section__item-top, .services-section__title,
+  .specialists-section, .specialists-section__inner, .specialists-section__info, .specialists-section__item, .specialists-section__item-img,
+  .gallery, .gallery__title, .gallery__adress,
+  .footer, .footer__info, .footer__info-top, .footer__info-tel, .footer__info-wrap, .footer__info-contacts, .footer__info-times,
+  .logo-wrap, .descriptor, .footer__legal,
+  .legal-info, .license-info, .license-card, .detail-card, .contact-item .contact-content, .licenses, .licenses__content, .contact-section,
+  .privacy__content, .privacy__section, .error-content,
+  .education, .education__item, .education__wrapper, .education__item-label,
+  .contat-us, .contat-us .container, .contat-us__info, .contat-us__wrap, .contat-us__contacts, .contat-us__contact, .contat-us__title, .contat-us__subtitle,
+  .specialist, .specialist-info, .specialist-info__items, .specialist-info__item,
+  .development {
+    background: #f5f5dc !important;
+    color: #5c4033 !important;
+  }
+  
+  .hero__stats-item { background: rgba(92, 64, 51, 0.1) !important; }
+  .services-section__wrapper { background: #eee8d5 !important; }
+  .license-details, .education .container { background: #eee8d5 !important; }
+  
+  h1, h2, h3, h4, h5, h6, p, span, .name, .footer__info-times p { color: #5c4033 !important; }
+  a { color: #3d2914 !important; text-decoration: underline !important; }
+  a:hover { color: #3d2914 !important; }
+  
+  .download, .specialists-section__top a, .footer__info-tel a, .docs-link, .prev,
+  .hero__tel, .normal-version-btn {
+    background: #5c4033 !important;
+    color: #f5f5dc !important;
+    border-color: #5c4033 !important;
+  }
+  .footer__info-tel a, .hero__tel, .hero__tel span, .download, .download span, .specialists-section__top a { color: #f5f5dc !important; }
+  * { transition: none !important; }
+  *:hover { background-color: inherit !important; color: inherit !important; border-color: inherit !important; box-shadow: none !important; transform: none !important; }
+  .download:hover, .specialists-section__top a:hover, .footer__info-tel a:hover { background: #5c4033 !important; color: #f5f5dc !important; }
+  .download:hover::before { opacity: 0 !important; }
+  .specialists-section__item:hover img { transform: none !important; }
+  .services-section__item:hover { box-shadow: none !important; }
+  
+  .header__action-icon { background: #5c4033 !important; }
+  .header { background: #f5f5dc !important; border-bottom: 2px solid #5c4033 !important; }
+  .header .nav a, .header__action span, .header__action p, .header__action a, .contat-us__contact a { color: #5c4033 !important; }
+  .hero__subtitle, .hero__title, .services-section__title, .gallery__title, .specialists-section__title, .contat-us__title { color: #5c4033 !important; font-weight: 800 !important; text-shadow: none !important; -webkit-text-fill-color: #5c4033 !important; }
+  .header .nav a.active { color: #3d2914 !important; }
+  .contat-us__subtitle, .education__item-label span { -webkit-text-fill-color: #5c4033 !important; color: #5c4033 !important; }
+}
+
+// З — Зеленый на темно-коричневом
+body.color-z {
+  background: #3d2914 !important;
+  color: #90ee90 !important;
+  
+  .app, .main, #__nuxt, section, .container,
+  .header, .header .container, .header .nav, .header__actions, .header__action, .header__action-wrap,
+  .hero, .hero__content, .hero__stats, .hero__stats-item, .hero__subtitle, .hero__title, .hero__tel, .hero__descr,
+  .services-section, .services-section__wrapper, .services-section__item, .services-section__item-top, .services-section__title,
+  .specialists-section, .specialists-section__inner, .specialists-section__info, .specialists-section__item, .specialists-section__item-img,
+  .gallery, .gallery__title, .gallery__adress,
+  .footer, .footer__info, .footer__info-top, .footer__info-tel, .footer__info-wrap, .footer__info-contacts, .footer__info-times,
+  .logo-wrap, .descriptor, .footer__legal,
+  .legal-info, .license-info, .license-card, .detail-card, .contact-item .contact-content, .licenses, .licenses__content, .contact-section,
+  .privacy__content, .privacy__section, .error-content,
+  .education, .education__item, .education__wrapper, .education__item-label,
+  .contat-us, .contat-us .container, .contat-us__info, .contat-us__wrap, .contat-us__contacts, .contat-us__contact, .contat-us__title, .contat-us__subtitle,
+  .specialist, .specialist-info, .specialist-info__items, .specialist-info__item,
+  .development {
+    background: #3d2914 !important;
+    color: #90ee90 !important;
+  }
+  
+  .hero__stats-item { background: rgba(144, 238, 144, 0.1) !important; }
+  .services-section__wrapper { background: #2d1f0f !important; }
+  .license-details, .education .container { background: #2d1f0f !important; }
+  
+  h1, h2, h3, h4, h5, h6, p, span, .name, .footer__info-times p { color: #90ee90 !important; }
+  a { color: #98fb98 !important; text-decoration: underline !important; }
+  a:hover { color: #98fb98 !important; }
+  
+  .download, .specialists-section__top a, .footer__info-tel a, .docs-link, .prev,
+  .hero__tel, .normal-version-btn {
+    background: #90ee90 !important;
+    color: #3d2914 !important;
+    border-color: #90ee90 !important;
+  }
+  .footer__info-tel a, .hero__tel, .hero__tel span, .download, .download span, .specialists-section__top a { color: #3d2914 !important; }
+  * { transition: none !important; }
+  *:hover { background-color: inherit !important; color: inherit !important; border-color: inherit !important; box-shadow: none !important; transform: none !important; }
+  .download:hover, .specialists-section__top a:hover, .footer__info-tel a:hover { background: #90ee90 !important; color: #3d2914 !important; }
+  .download:hover::before { opacity: 0 !important; }
+  .specialists-section__item:hover img { transform: none !important; }
+  .services-section__item:hover { box-shadow: none !important; }
+  
+  .header__action-icon { background: #90ee90 !important; }
+  .header { background: #3d2914 !important; border-bottom: 2px solid #90ee90 !important; }
+  .header .nav a, .header__action span, .header__action p, .header__action a, .contat-us__contact a { color: #90ee90 !important; }
+  .hero__subtitle, .hero__title, .services-section__title, .gallery__title, .specialists-section__title, .contat-us__title { color: #90ee90 !important; font-weight: 800 !important; text-shadow: none !important; -webkit-text-fill-color: #90ee90 !important; }
+  .header .nav a.active { color: #98fb98 !important; }
+  .contat-us__subtitle, .education__item-label span { -webkit-text-fill-color: #90ee90 !important; color: #90ee90 !important; }
+}
+
+body.color-normal {
+  // Без изменений
+}
+
+// Отключение изображений
+body.hide-images {
+  img { display: none !important; }
+  * { background-image: none !important; }
+}
+
+.img-alt-replacement {
+  display: block !important;
+  padding: 12px 16px;
+  margin: 8px 0;
+  border: 2px dashed currentColor;
+  border-radius: 8px;
+  font-style: italic;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+body.color-ch .img-alt-replacement,
+body.color-z .img-alt-replacement {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+body *:focus {
+  outline: 3px solid currentColor !important;
+  outline-offset: 2px !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

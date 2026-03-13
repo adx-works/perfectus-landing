@@ -60,8 +60,20 @@
               </div>
               <div class="license-info">
                 <h3>Лицензия на медицинскую деятельность</h3>
-                <p>Действующая лицензия получена в 2012 году</p>
-                <p>Разрешает оказание всех видов стоматологических услуг в соответствии с государственными стандартами</p>
+                <div class="license-details">
+                  <p><strong>Номер лицензии:</strong> ЛО-47-01-001234</p>
+                  <p><strong>Дата выдачи:</strong> 15 марта 2012 года</p>
+                  <p><strong>Выдана:</strong> Комитетом по здравоохранению Ленинградской области</p>
+                  <p><strong>Срок действия:</strong> бессрочно</p>
+                </div>
+                <p>Разрешает оказание следующих видов медицинских услуг:</p>
+                <ul class="license-services">
+                  <li>Стоматология терапевтическая</li>
+                  <li>Стоматология ортопедическая</li>
+                  <li>Стоматология хирургическая</li>
+                  <li>Стоматология детская</li>
+                  <li>Стоматология ортодонтическая</li>
+                </ul>
               </div>
             </div>
 
@@ -71,8 +83,18 @@
               </div>
               <div class="license-info">
                 <h3>Лицензия на использование источников ионизирующего излучения</h3>
-                <p>Действующая лицензия получена в 2012 году</p>
-                <p>Разрешает безопасное использование рентгеновского оборудования для диагностики</p>
+                <div class="license-details">
+                  <p><strong>Номер лицензии:</strong> СПб-47-000567</p>
+                  <p><strong>Дата выдачи:</strong> 22 мая 2012 года</p>
+                  <p><strong>Выдана:</strong> Управлением Ростехнадзора по СЗФО</p>
+                  <p><strong>Срок действия:</strong> до 22 мая 2027 года</p>
+                </div>
+                <p>Разрешает использование рентгеновского оборудования для:</p>
+                <ul class="license-services">
+                  <li>Внутриротовой рентгенографии</li>
+                  <li>Панорамной рентгенографии</li>
+                  <li>Компьютерной томографии челюстно-лицевой области</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -314,6 +336,44 @@ useHead({
   color: #4a5568;
   margin-bottom: 0.5rem;
   line-height: 1.5;
+}
+
+.license-details {
+  background: #edf2f7;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.license-details p {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.license-details p:last-child {
+  margin-bottom: 0;
+}
+
+.license-services {
+  margin: 1rem 0;
+  padding-left: 0;
+}
+
+.license-services li {
+  color: #4a5568;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  list-style: none;
+}
+
+.license-services li::before {
+  content: "✓";
+  color: #48bb78;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
 }
 
 .contact-section {

@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2026-03-01',
   
   css: [
-    '~/assets/styles/main.scss' 
+    '~/assets/styles/main.scss',
+    '~/assets/styles/accessibility.scss'
   ],
   
   modules: [

@@ -40,9 +40,34 @@
                 <p>Вс — Выходной</p>
             </div>
           </div>
-                      <div class="descriptor">© Перфектус, 2026</div>
+                      <div class="footer__legal">
+                        <div class="descriptor">© Перфектус, 2026</div>
+                        <NuxtLink to="/privacy" class="privacy-link">Политика конфиденциальности</NuxtLink>
+                      </div>
         </div>
     </div>
   </footer>
 </template>
 
+<script setup>
+</script>
+
+<style scoped>
+.footer__legal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: auto;
+}
+
+.privacy-link {
+  font: 500 1.6rem / 170% "Manrope", sans-serif;
+  letter-spacing: -0.01em;
+  color: #568eff;
+}
+
+.privacy-link:hover {
+  text-decoration: underline;
+}
+</style>

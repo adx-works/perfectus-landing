@@ -254,6 +254,9 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation } from 'swiper/modules'
 
 // Импортируем изображения напрямую
+import img01 from '~/assets/images/gallery/clinic-1.jpg'
+import img02 from '~/assets/images/gallery/clinic-2.jpg'
+import img03 from '~/assets/images/gallery/clinic-3.jpg'
 import img1 from '~/assets/images/gallery/gallery1.jpg'
 import img2 from '~/assets/images/gallery/gallery2.jpg'
 import img3 from '~/assets/images/gallery/gallery3.jpg'
@@ -270,15 +273,18 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 
 const slides = ref([
-  { id: 1, imageUrl: img1 },
-  { id: 2, imageUrl: img2 },
-  { id: 3, imageUrl: img3 },
-  { id: 4, imageUrl: img4 },
-  { id: 5, imageUrl: img5 },
-  { id: 6, imageUrl: img6 },
-  { id: 7, imageUrl: img7 },
-  { id: 8, imageUrl: img8 },
-  { id: 9, imageUrl: img9 }
+  { id: 1, imageUrl: img01 },
+  { id: 2, imageUrl: img02 },
+  { id: 3, imageUrl: img03 },
+  { id: 4, imageUrl: img1 },
+  { id: 5, imageUrl: img2 },
+  { id: 6, imageUrl: img3 },
+  { id: 7, imageUrl: img4 },
+  { id: 8, imageUrl: img5 },
+  { id: 9, imageUrl: img6 },
+  { id: 10, imageUrl: img7 },
+  { id: 11, imageUrl: img8 },
+  { id: 12, imageUrl: img9 }
 ])
 
 const router = useRouter()
