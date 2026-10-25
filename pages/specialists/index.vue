@@ -2,7 +2,7 @@
   <div class="specialists">
      <section class="specialists-section specialists-hero">
         <div class="container">
-             <div class="specialists-section__title">Наши специалисты</div>
+             <h1 class="specialists-section__title">Наши специалисты</h1>
             <p class="specialists-section__descr">
               Информация о каждом из наших врачей, их квалификации <br> и опыте находится в их профилях на нашем сайте
             </p>
@@ -38,7 +38,7 @@
                     <div class="contat-us__contacts">
                         <div class="contat-us__contact">
                             <span>Номер телефона:</span>
-                            <a href="tel:+7 (921) 873-70-73">+7 (921) 873-70-73</a>
+                            <a href="tel:+79218737073">+7 (921) 873-70-73</a>
                         </div>
                         <div class="contat-us__contact">
                             <span>Электронная почта:</span>

@@ -1,7 +1,9 @@
 <template>
   <div class="docs">
     <section class="documents">
-      <div class="container">        
+      <div class="container">
+        <h1 class="documents__title">Документы и лицензии</h1>
+
         <!-- Информация о юридическом лице -->
         <div class="legal-info">
           <h2 class="legal-info__title">Информация о юридическом лице</h2>
@@ -161,7 +163,7 @@ useHead({
 <style scoped>
 .documents {
   padding: 4rem 0;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  background: #f8f9fc;
   min-height: 100vh;
 }
 
@@ -170,11 +172,7 @@ useHead({
   font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
-  color: #1a202c;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #2d3748;
 }
 
 .legal-info {

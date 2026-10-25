@@ -155,7 +155,7 @@ useHead({
 <style scoped>
 .privacy-section {
   padding: 4rem 0;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  background: #f8f9fc;
   min-height: 100vh;
 }
 

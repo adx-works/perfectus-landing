@@ -29,9 +29,11 @@
                       <p>зубов спасли <br> от удаления</p>
                     </div>
                 </div>
-                 <h2 class="hero__subtitle">Стоматологическая клиника</h2>
-                <h1 class="hero__title">«Перфектус»</h1>
-                <a href="tel:" class="hero__tel">
+                <h1 class="hero__heading">
+                  <span class="hero__subtitle">Стоматологическая клиника</span>
+                  <span class="hero__title">«Перфектус»</span>
+                </h1>
+                <a href="tel:+79218737073" class="hero__tel">
                     Записаться на прием
                     <span>+7 (921) 873-70-73</span>
                 </a>
@@ -41,7 +43,7 @@
      </section>
      <section class="services-section" id="services">
         <div class="container">
-            <h3 class="services-section__title">Стоматологические услуги</h3>
+            <h2 class="services-section__title">Стоматологические услуги</h2>
             <p>В нашей клинике мы предлагаем комплексные стоматологические <br>
                услуги, направленные на поддержание здоровья и красоты ваших зубов. <br>
                 Цены на услуги каждого направления — по ссылке «Смотреть цены»</p>
@@ -169,7 +171,7 @@
      <section class="specialists-section">
         <div class="container">
           <div class="specialists-section__top">
-            <div class="specialists-section__title">Наши специалисты</div>
+            <h2 class="specialists-section__title">Наши специалисты</h2>
             <a href="/specialists">
               все специалисты
               <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -202,7 +204,7 @@
                     @click="goToSpecialist(specialist.id)"
                   >
                       <div class="specialists-section__item-img">
-                           <img :src="specialist.photo" :alt="specialist.fullName">
+                           <img :src="specialist.photo" :alt="specialist.fullName" loading="lazy">
                            <div class="name">{{ specialist.fullName }}</div>
                       </div>
                       <p>{{ specialist.profile }}</p>
@@ -213,7 +215,7 @@
      </section>   
      <section class="gallery">
         <div class="container">
-            <div class="gallery__title">Фото клиники</div>
+            <h2 class="gallery__title">Фото клиники</h2>
             <div class="gallery__adress">
               <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.87012 0C12.4879 0 14.9985 0.960276 16.8496 2.66895C18.7007 4.37763 19.7412 6.69488 19.7412 9.11133C19.7411 14.6988 12.5603 21.8021 10.4482 23.7705C10.1185 24.0779 9.62275 24.0779 9.29297 23.7705C7.18106 21.8022 9.88655e-05 14.699 0 9.11133C3.90059e-08 6.69504 1.03978 4.3776 2.89062 2.66895C4.74161 0.960341 7.25243 8.88204e-05 9.87012 0ZM9.87012 5.31445C8.86349 5.31454 7.89837 5.71502 7.18652 6.42676C6.47457 7.13871 6.07422 8.10448 6.07422 9.11133C6.07427 10.1181 6.47462 11.084 7.18652 11.7959C7.89835 12.5075 8.86359 12.9071 9.87012 12.9072C10.8768 12.9072 11.8428 12.5077 12.5547 11.7959C13.2666 11.084 13.6669 10.1181 13.667 9.11133C13.667 8.10448 13.2666 7.13871 12.5547 6.42676C11.8427 5.71485 10.8769 5.31445 9.87012 5.31445Z" fill="url(#paint0_linear_59_1773)" />
@@ -239,6 +241,7 @@
           :src="slide.imageUrl" 
           :alt="'Фото клиники Перфектус - интерьер ' + slide.id"
           class="product-image"
+          loading="lazy"
         >
       </div>
     </SwiperSlide>

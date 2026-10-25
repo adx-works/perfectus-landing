@@ -372,7 +372,11 @@ body{
             }
         }
     }
+    &__heading{
+        display: contents;
+    }
     &__subtitle{
+        display: block;
         font: 600 4rem / 110% $font-family;
         letter-spacing: -0.01em;
         text-transform: uppercase;
@@ -386,6 +390,7 @@ body{
         }
     }
     &__title{
+        display: block;
         font: 700 11rem / 110% $font-family;
         letter-spacing: 0em;
         text-transform: uppercase;
@@ -1202,7 +1207,7 @@ body{
                     font-size: 1.4rem;
                 }
             }
-            p{
+            p, h1{
                 font: 500 2.1rem / 100% $font-family;
                 letter-spacing: -0.01em;
                 color: #000;  

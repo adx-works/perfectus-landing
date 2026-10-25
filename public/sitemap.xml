@@ -1,81 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://perfectus-dent.ru/</loc>
-    <lastmod>2026-03-02</lastmod>
+    <loc>https://xn--e1aaprgigif.xn--p1ai/</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://perfectus-dent.ru/specialists</loc>
-    <lastmod>2026-03-02</lastmod>
+    <loc>https://xn--e1aaprgigif.xn--p1ai/specialists</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://perfectus-dent.ru/specialists/dyakonova-vilena-viktorovna</loc>
-    <lastmod>2026-03-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://perfectus-dent.ru/specialists/tsareva-yulia-anatolyevna</loc>
-    <lastmod>2026-03-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://perfectus-dent.ru/specialists/gogina-alina-vladimirovna</loc>
-    <lastmod>2026-03-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://perfectus-dent.ru/specialists/galster-oksana-anatolyevna</loc>
+    <loc>https://xn--e1aaprgigif.xn--p1ai/specialists/dyakonova-vilena-viktorovna</loc>
     <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://perfectus-dent.ru/price/ortopediya-i-protezirovanie</loc>
+    <loc>https://xn--e1aaprgigif.xn--p1ai/specialists/tsareva-yulia-anatolyevna</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://xn--e1aaprgigif.xn--p1ai/specialists/gogina-alina-vladimirovna</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://xn--e1aaprgigif.xn--p1ai/specialists/galster-oksana-anatolyevna</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://xn--e1aaprgigif.xn--p1ai/price/ortopediya-i-protezirovanie</loc>
     <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://perfectus-dent.ru/price/terapevticheskoe-lechenie</loc>
+    <loc>https://xn--e1aaprgigif.xn--p1ai/price/terapevticheskoe-lechenie</loc>
     <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://perfectus-dent.ru/price/parodontologiya</loc>
+    <loc>https://xn--e1aaprgigif.xn--p1ai/price/parodontologiya</loc>
     <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://perfectus-dent.ru/price/esteticheskaya-stomatologiya</loc>
+    <loc>https://xn--e1aaprgigif.xn--p1ai/price/esteticheskaya-stomatologiya</loc>
     <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://perfectus-dent.ru/price/professionalnaya-gigiena</loc>
+    <loc>https://xn--e1aaprgigif.xn--p1ai/price/professionalnaya-gigiena</loc>
     <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://perfectus-dent.ru/price/hirurgicheskaya-stomatologiya</loc>
+    <loc>https://xn--e1aaprgigif.xn--p1ai/price/hirurgicheskaya-stomatologiya</loc>
     <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://perfectus-dent.ru/docs</loc>
-    <lastmod>2026-03-02</lastmod>
+    <loc>https://xn--e1aaprgigif.xn--p1ai/docs</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://xn--e1aaprgigif.xn--p1ai/privacy</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

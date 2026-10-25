@@ -28,7 +28,7 @@
               </div>
               <div class="header__action-wrap">
                 <span>Запись по телефону:</span>
-                <a href="tel:+7 (921) 873-70-73">+7 (921) 873-70-73</a>
+                <a href="tel:+79218737073">+7 (921) 873-70-73</a>
               </div>
           </div>
       </div>

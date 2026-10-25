@@ -50,8 +50,9 @@
             <ul>
               <li><strong>7% — семейная:</strong> каждый последующий член семьи лечится с 7% скидкой</li>
               <li><strong>10% — постоянный пациент:</strong> следующее посещение после полной санации полости рта</li>
+              <li><strong>20% — для участников СВО</strong></li>
             </ul>
-            <p>При наличии двух скидок применяется наибольшая.</p>
+            <p>При наличии нескольких скидок применяется наибольшая.</p>
           </div>
 
           <p class="price-card__note">
@@ -99,7 +100,7 @@ useHead({
 <style scoped>
 .price {
   padding: 6.4rem 0;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  background: #f8f9fc;
   min-height: 100vh;
 }
 

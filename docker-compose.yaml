@@ -6,6 +6,8 @@ services:
     command:
       - --entrypoints.http.address=:80
       - --entrypoints.https.address=:443
+      - --entrypoints.http.http.redirections.entrypoint.to=https
+      - --entrypoints.http.http.redirections.entrypoint.scheme=https
       - --providers.docker
       - --providers.docker.exposedByDefault=false
       - --certificatesresolvers.letsEncrypt.acme.email=team@shamps.dev
@@ -19,7 +21,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
 
   perfectus:
-    image: shampiniony/perfectus:latest
+    image: cr.adxlabs.ru/perfectus-landing:latest
     restart: always
     labels:
       - traefik.enable=true

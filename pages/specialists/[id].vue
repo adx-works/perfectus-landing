@@ -21,7 +21,7 @@
             <div class="specialist-info__items">
               <div class="specialist-info__item">
                 <span>ФИО:</span>
-                <p>{{ specialist.fullName }}</p>
+                <h1>{{ specialist.fullName }}</h1>
               </div>
               <div class="specialist-info__item">
                 <span>Профиль специалиста:</span>
@@ -59,7 +59,7 @@
     <!-- Секция образования -->
     <section v-if="specialist" id="education" class="education">
     <div class="container">
-      <div class="education__title">Образование</div>
+      <h2 class="education__title">Образование</h2>
       <div v-if="specialist.education && specialist.education.length > 0" class="education__wrapper">
         <!-- Свайпер контейнер -->
         <ClientOnly>
