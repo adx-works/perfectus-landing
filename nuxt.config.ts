@@ -2,7 +2,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: true,
   compatibilityDate: '2026-03-01',
-  
+
+  devServer: {
+    host: '127.0.0.1'
+  },
+
   css: [
     '~/assets/styles/main.scss',
     '~/assets/styles/accessibility.scss'

@@ -27,7 +27,7 @@
                 <span>Профиль специалиста:</span>
                 <p>{{ specialist.profile }}</p>
               </div>
-              <div class="specialist-info__item">
+              <div v-if="specialist.experience" class="specialist-info__item">
                 <span>Опыт работы:</span>
                 <p>{{ specialist.experience }} лет</p>
               </div>

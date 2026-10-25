@@ -44,7 +44,7 @@
             <h3 class="services-section__title">Стоматологические услуги</h3>
             <p>В нашей клинике мы предлагаем комплексные стоматологические <br>
                услуги, направленные на поддержание здоровья и красоты ваших зубов. <br>
-                Для ознакомления со стоимостью услуг скачайте наш PDF-прайс</p>
+                Цены на услуги каждого направления — по ссылке «Смотреть цены»</p>
         </div>
         <div class="services-section__wrapper">
           <div class="container">
@@ -54,7 +54,7 @@
                    Ортопедия <br> и протезирование
               </div>
               <p>Замещение отсутствующих зубов, <br> восстановление красоты зубного ряда</p>
-              <a href="/price.pdf" class="download" target="_blank" rel="noopener noreferrer">
+              <NuxtLink to="/price/ortopediya-i-protezirovanie" class="download">
                   <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.800003 11.2V12.8C0.800003 13.2244 0.968574 13.6314 1.26863 13.9314C1.56869 14.2315 1.97566 14.4 2.4 14.4H12C12.4243 14.4 12.8313 14.2315 13.1314 13.9314C13.4314 13.6314 13.6 13.2244 13.6 12.8V11.2M3.2 6.40005L7.2 10.4M7.2 10.4L11.2 6.40005M7.2 10.4V0.800049" stroke="url(#paint0_linear_59_170)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                     <defs>
@@ -64,8 +64,8 @@
                       </linearGradient>
                     </defs>
                   </svg>
-                  <span>Скачать PDF</span>
-              </a>
+                  <span>Смотреть цены</span>
+              </NuxtLink>
             </div>
             <div class="services-section__item">
               <div class="services-section__item-top">
@@ -73,7 +73,7 @@
                    Терапевтическое лечение зубов
               </div>
               <p>Лечени кариеса, пульпита, периодонтита</p>
-              <a href="/price.pdf" class="download" target="_blank" rel="noopener noreferrer">
+              <NuxtLink to="/price/terapevticheskoe-lechenie" class="download">
                   <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.800003 11.2V12.8C0.800003 13.2244 0.968574 13.6314 1.26863 13.9314C1.56869 14.2315 1.97566 14.4 2.4 14.4H12C12.4243 14.4 12.8313 14.2315 13.1314 13.9314C13.4314 13.6314 13.6 13.2244 13.6 12.8V11.2M3.2 6.40005L7.2 10.4M7.2 10.4L11.2 6.40005M7.2 10.4V0.800049" stroke="url(#paint0_linear_59_170)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                     <defs>
@@ -83,8 +83,8 @@
                       </linearGradient>
                     </defs>
                   </svg>
-                  <span>Скачать PDF</span>
-              </a>
+                  <span>Смотреть цены</span>
+              </NuxtLink>
             </div>
             <div class="services-section__item">
               <div class="services-section__item-top">
@@ -92,7 +92,7 @@
                    Пародонтология
               </div>
               <p>Устранение подвижности зубов лечением десен, шинированием, протезированием</p>
-              <a href="/price.pdf" class="download" target="_blank" rel="noopener noreferrer">
+              <NuxtLink to="/price/parodontologiya" class="download">
                   <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.800003 11.2V12.8C0.800003 13.2244 0.968574 13.6314 1.26863 13.9314C1.56869 14.2315 1.97566 14.4 2.4 14.4H12C12.4243 14.4 12.8313 14.2315 13.1314 13.9314C13.4314 13.6314 13.6 13.2244 13.6 12.8V11.2M3.2 6.40005L7.2 10.4M7.2 10.4L11.2 6.40005M7.2 10.4V0.800049" stroke="url(#paint0_linear_59_170)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                     <defs>
@@ -102,8 +102,8 @@
                       </linearGradient>
                     </defs>
                   </svg>
-                  <span>Скачать PDF</span>
-              </a>
+                  <span>Смотреть цены</span>
+              </NuxtLink>
             </div>
 
             <div class="services-section__item">
@@ -112,7 +112,7 @@
                    Эстетическая стоматология
               </div>
               <p>Профессиональное и безопасное отбеливание зубов</p>
-              <a href="/price.pdf" class="download" target="_blank" rel="noopener noreferrer">
+              <NuxtLink to="/price/esteticheskaya-stomatologiya" class="download">
                   <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.800003 11.2V12.8C0.800003 13.2244 0.968574 13.6314 1.26863 13.9314C1.56869 14.2315 1.97566 14.4 2.4 14.4H12C12.4243 14.4 12.8313 14.2315 13.1314 13.9314C13.4314 13.6314 13.6 13.2244 13.6 12.8V11.2M3.2 6.40005L7.2 10.4M7.2 10.4L11.2 6.40005M7.2 10.4V0.800049" stroke="url(#paint0_linear_59_170)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                     <defs>
@@ -122,8 +122,8 @@
                       </linearGradient>
                     </defs>
                   </svg>
-                  <span>Скачать PDF</span>
-              </a>
+                  <span>Смотреть цены</span>
+              </NuxtLink>
             </div>
             <div class="services-section__item">
               <div class="services-section__item-top">
@@ -131,7 +131,7 @@
                   Профессиональная <br> гигиена
               </div>
               <p>Удаление зубных камней и налета <br> ультразвуком, airflow</p>
-              <a href="/price.pdf" class="download" target="_blank" rel="noopener noreferrer">
+              <NuxtLink to="/price/professionalnaya-gigiena" class="download">
                   <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.800003 11.2V12.8C0.800003 13.2244 0.968574 13.6314 1.26863 13.9314C1.56869 14.2315 1.97566 14.4 2.4 14.4H12C12.4243 14.4 12.8313 14.2315 13.1314 13.9314C13.4314 13.6314 13.6 13.2244 13.6 12.8V11.2M3.2 6.40005L7.2 10.4M7.2 10.4L11.2 6.40005M7.2 10.4V0.800049" stroke="url(#paint0_linear_59_170)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                     <defs>
@@ -141,8 +141,8 @@
                       </linearGradient>
                     </defs>
                   </svg>
-                  <span>Скачать PDF</span>
-              </a>
+                  <span>Смотреть цены</span>
+              </NuxtLink>
             </div>
             <div class="services-section__item">
               <div class="services-section__item-top">
@@ -150,7 +150,7 @@
                    Хирургическая стоматология 
               </div>
               <p>Удаление зубов, разрезы, закрытый/открытый кюретаж</p>
-              <a href="/price.pdf" class="download" target="_blank" rel="noopener noreferrer">
+              <NuxtLink to="/price/hirurgicheskaya-stomatologiya" class="download">
                   <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.800003 11.2V12.8C0.800003 13.2244 0.968574 13.6314 1.26863 13.9314C1.56869 14.2315 1.97566 14.4 2.4 14.4H12C12.4243 14.4 12.8313 14.2315 13.1314 13.9314C13.4314 13.6314 13.6 13.2244 13.6 12.8V11.2M3.2 6.40005L7.2 10.4M7.2 10.4L11.2 6.40005M7.2 10.4V0.800049" stroke="url(#paint0_linear_59_170)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                     <defs>
@@ -160,8 +160,8 @@
                       </linearGradient>
                     </defs>
                   </svg>
-                  <span>Скачать PDF</span>
-              </a>
+                  <span>Смотреть цены</span>
+              </NuxtLink>
             </div>
           </div>
         </div>
@@ -186,7 +186,7 @@
           </div>
             
             <p class="specialists-section__descr">
-              Для более подробной информации о каждом из наших врачей, их квалификации <br> и опыте, вы можете ознакомиться с их профилями на нашем сайте
+              Информация о каждом из наших врачей, их квалификации <br> и опыте находится в их профилях на нашем сайте
             </p>
             <div class="specialists-section__inner">
                 <div class="specialists-section__info">
@@ -310,6 +310,12 @@ const specialists = [
     photo: '/images/specialists/gogina.png',
     profile: 'Врач-стоматолог общей практики',
     experience: 7
+  },
+  {
+    id: 'galster-oksana-anatolyevna',
+    fullName: 'Гальстер Оксана Анатольевна',
+    photo: '/images/specialists/galster.jpg',
+    profile: 'Старшая медицинская сестра'
   }
 ]
 

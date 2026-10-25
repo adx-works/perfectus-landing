@@ -11,6 +11,6 @@ export interface Specialist {
   fullName: string
   photo: string
   profile: string
-  experience: number
+  experience?: number
   education: Education[]
 }

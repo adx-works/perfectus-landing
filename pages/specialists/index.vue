@@ -4,7 +4,7 @@
         <div class="container">
              <div class="specialists-section__title">Наши специалисты</div>
             <p class="specialists-section__descr">
-              Для более подробной информации о каждом из наших врачей, их квалификации <br> и опыте, вы можете ознакомиться с их профилями на нашем сайте
+              Информация о каждом из наших врачей, их квалификации <br> и опыте находится в их профилях на нашем сайте
             </p>
             <div class="specialists-section__inner">
                 <div class="specialists-section__info">
@@ -94,6 +94,12 @@ const specialists = [
     photo: '/images/specialists/gogina.png',
     profile: 'Врач-стоматолог общей практики',
     experience: 7
+  },
+  {
+    id: 'galster-oksana-anatolyevna',
+    fullName: 'Гальстер Оксана Анатольевна',
+    photo: '/images/specialists/galster.jpg',
+    profile: 'Старшая медицинская сестра'
   }
 ]
 
