@@ -28,6 +28,15 @@ services:
       - traefik.http.routers.perfectus.rule=Host(`xn--e1aaprgigif.xn--p1ai`)
       - traefik.http.routers.perfectus.entrypoints=https
       - traefik.http.routers.perfectus.tls.certresolver=letsEncrypt
+      - traefik.http.routers.perfectus.service=perfectus
+      - traefik.http.routers.perfectus-www.rule=Host(`www.xn--e1aaprgigif.xn--p1ai`)
+      - traefik.http.routers.perfectus-www.entrypoints=https
+      - traefik.http.routers.perfectus-www.tls.certresolver=letsEncrypt
+      - traefik.http.routers.perfectus-www.middlewares=perfectus-www-redirect
+      - traefik.http.routers.perfectus-www.service=perfectus
+      - traefik.http.middlewares.perfectus-www-redirect.redirectregex.regex=^https://www\.(.*)
+      - traefik.http.middlewares.perfectus-www-redirect.redirectregex.replacement=https://$${1}
+      - traefik.http.middlewares.perfectus-www-redirect.redirectregex.permanent=true
       - traefik.http.services.perfectus.loadbalancer.server.port=3000
 
 volumes:
